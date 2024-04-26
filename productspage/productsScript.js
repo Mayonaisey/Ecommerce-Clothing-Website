@@ -259,6 +259,7 @@ var clothes = {
 const productsList = clothes.products;
 const productContainer = document.getElementById("product-container");
 
+
 productsList.forEach(function (product) {
   // Create product div
   var productDiv = document.createElement("div");
@@ -267,18 +268,22 @@ productsList.forEach(function (product) {
   // Add product details
   var image = document.createElement("img");
   image.src = product.image_path;
+  image.classList.add("img");
   productDiv.appendChild(image);
 
   var name = document.createElement("p");
   name.textContent = product.name;
+  name.classList.add("text");
   productDiv.appendChild(name);
 
   var price = document.createElement("p");
   price.textContent = "Price: " + product.price + " EGP";
+  price.classList.add("price");
   productDiv.appendChild(price);
 
   var sizes = document.createElement("p");
   sizes.textContent = "Sizes: " + product.size.join(", ");
+  sizes.classList.add("sizes");
   productDiv.appendChild(sizes);
 
   // Append product div to container
@@ -310,3 +315,4 @@ function searchProduct() {
     productContainer.innerHTML = "No one selected";
   }
 }
+

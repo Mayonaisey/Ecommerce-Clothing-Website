@@ -167,9 +167,13 @@ color: rgb(240, 236, 236);
   margin-bottom: 0.5em;
 }
 .price {
-  color: darkblue;
+  color: rgb(162, 196, 81);
   text-align: left;
   margin-left: 2em;
+  font-weight: 30px;
+}
+.sizes{
+  color: #c9c69d;
 }
 a {
   text-decoration: none;
