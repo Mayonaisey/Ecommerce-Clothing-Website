@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta hhtp-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Website Name</title>
+      <link rel="stylesheet" href="style.css" />
+      <script src="https://kit.fontawesome.com/69992cfeb0.js"></script>
+    </head>
+    <body>
+      <div class="navbar">
+        <a href="home.html"><img src="images\logo.jpg" class="logo" alt="cannot load pic" width="50px"></a>
+        <div class="search">
+            <form action="#">
+                <input type="text" placeholder="Search category..." name="search" size="60"  class="search-bar">
+                <button class="bt">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+        <div class="navbaricons">
+          <a href="homepage.html"><i class="fa-solid fa-house" id="homepage"></i></a>
+          <a href="likeditems.html"><i class="fa-solid fa-heart"></i></a>
+          <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+      </div>
+
+      <div class="page">
+        <div class="sidebar">
+          <header id="filter"><i class="fa-solid fa-filter"></i> Filters</header>
+          <!--first gender radio button-->
+          <div class="gender-content">
+          <button class="gender-btn" onclick="displayGender()">Gender
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div id="radio-group">
+              <input id="male" type="radio" value="male" name="gender">
+              <label for="male">male</label><br>
+              <input id="fem" type="radio" value="female" name="gender">
+              <label for="fem">female</label><br>
+              
+          </div>
+        </div>
+          <!--second is the dropdown menu for size-->
+          <div class="size-content">
+          <button class="size-btn" onclick="displaySize()">Size
+            <i class="fa fa-caret-down" ></i>
+          </button>
+          <div id="dropdown-size">
+            <!--buttons for range of sizes-->
+            <input type="checkbox" id="size1" name="size" value="9-10years">
+            <label for="size1"> 9-10 years</label><br>
+            <input type="checkbox" id="size2" name="size" value="10-12years">
+            <label for="size2">10-12 years</label><br>
+            <input type="checkbox" id="size3" name="size" value="36-40years">
+            <label for="size3"> 36-40</label><br>
+            <input type="checkbox" id="size4" name="size" value="44-44years">
+            <label for="size4">40-44</label><br>
+          </div>
+        </div>
+           <!--buttons for product types-->
+           <div class="product-content">
+          <button class="product-btn" onclick="displayProduct()">Product Type
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div id="dropdown-producttype">
+            <input type="radio" id="prod1" name="prod" value="T-shirt">
+            <label for="prod1">T-shirt</label><br>
+            <input type="radio" id="prod2" name="prod" value="Blouse">
+            <label for="prod2">Blouse</label><br>
+            <input type="radio" id="prod3" name="prod" value="Jeans">
+            <label for="prod3">Jeans</label><br>
+            <input type="radio" id="prod4" name="prod" value="Pants">
+            <label for="prod4">Pants</label><br>
+            <input type="radio" id="prod5" name="prod" value="Dress">
+            <label for="prod5">Dress</label><br>
+          </div>
+        </div>
+      </div>
+        <!--here goes each product-->
+        <se5ction class="product-list">
+          <div class="producttxt"><h1>Products</h1></div>
+          <div class="product-container">
+            <div class="card">
+              <a
+                href="https://www.lcwaikiki.eg/en-US/EG/product/LC-WAIKIKI/men's/Jean/7023213/3925650"
+              >
+                <div class="image">
+                  <img
+                    src="images\men\l_20241-s4fi43z8-m0u-93-75-91-182_a.webp"
+                  />
+                </div>
+                <div class="text">780 Men's Jogger Jeans</div>
+                <div class="price">999.00 EGP</div>
+              </a>
+            </div>
+            <div class="card">
+              <a
+                href="https://www.lcwaikiki.eg/en-US/EG/product/LC-WAIKIKI/girls/Jean-Dress/6458851/3172345"
+              >
+                <div class="image">
+                  <img src="images\kids\l_20232-w31234z4-h45-123-23_5.webp" />
+                </div>
+                <div class="text">Square Collar Girl Jean Salopet Dress</div>
+                <div class="price">989,10 EGP</div>
+              </a>
+            </div>
+            <div class="card">
+              <a
+                href="https://www.lcwaikiki.eg/en-US/EG/product/XSIDE/men's/Sweatshirt/6789822/3395414"
+              >
+                <div class="image">
+                  <img
+                    src="images\men\l_20241-s41484z8-v9v-97-78-96-188_a.webp"
+                  />
+                </div>
+                <div class="text">Crew Neck Long Sleeve Men's Sweatshirt</div>
+                <div class="price">899.00 EGP</div>
+              </a>
+            </div>
+            <div class="card">
+              <a
+                href="https://www.lcwaikiki.eg/en-US/EG/product/XSIDE/men's/Sweatshirt/6789822/3395415"
+              >
+                <div class="image">
+                  <img
+                    src="images\men\l_20241-s41484z8-ven-99-76-96-188_a.webp"
+                  />
+                </div>
+                <div class="text">Crew Neck Long Sleeve Men's Sweatshirt</div>
+                <div class="price">899.00 EGP</div>
+              </a>
+            </div>
+            <div class="card">
+              <a
+                href="https://www.lcwaikiki.eg/en-US/EG/product/LC-WAIKIKI/women%E2%80%99s/Dress/6383453/3067842"
+              >
+                <div class="image">
+                  <img
+                    src="images\women\l_20231-s3ec25z8-rql-84-59-91-175_a.webp"
+                  />
+                </div>
+                <div class="text">
+                  Square Collar Straight Strap Poplin Women's Dress
+                </div>
+                <div class="price">1349,10 EGP</div>
+              </a>
+            </div>
+            <div class="card">
+              <a
+                href="https://www.lcwaikiki.eg/en-US/EG/product/LC-WAIKIKI/women%E2%80%99s/Trousers/6689852/3875260"
+              >
+                <div class="image">
+                  <img src="images\women\l_20232-w3db10z8-vdp_u.webp" />
+                </div>
+                <div class="text">
+                  Women's High Waisted Standard Fit Regular Trousers
+                </div>
+                <div class="price">1.189,30 EGP</div>
+              </a>
+            </div>
+            <div class="card">
+              <a
+                href="https://www.lcwaikiki.eg/en-US/EG/product/LC-WAIKIKI/women%E2%80%99s/Body/6517176/3186339"
+              >
+                <div class="image">
+                  <img
+                    src="images\women\l_20232-w34955z8-cvl-78-56-91-178_a.webp"
+                  />
+                </div>
+                <div class="text">
+                  Crew Neck Straight Long Sleeve Women's Body
+                </div>
+                <div class="price">319,20 EGP</div>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div id="totalprice"></div>
+
+      <div class="footer"></div>
+    <script src="productsScript.js"></script>  
+    </body>
+  </html>
+</html>
