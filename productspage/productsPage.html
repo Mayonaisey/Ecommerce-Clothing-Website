@@ -51,14 +51,18 @@
           </button>
           <div id="dropdown-size">
             <!--buttons for range of sizes-->
-            <input type="checkbox" id="size1" name="size" value="9-10years">
+            <input type="checkbox" id="kids1" name="size" value="9-10years">
             <label for="size1"> 9-10 years</label><br>
-            <input type="checkbox" id="size2" name="size" value="10-12years">
+            <input type="checkbox" id="kids2" name="size" value="10-12years">
             <label for="size2">10-12 years</label><br>
-            <input type="checkbox" id="size3" name="size" value="36-40years">
-            <label for="size3"> 36-40</label><br>
-            <input type="checkbox" id="size4" name="size" value="44-44years">
-            <label for="size4">40-44</label><br>
+            <input type="checkbox" id="small" name="size" value="small">
+            <label for="size3"> S</label><br>
+            <input type="checkbox" id="medium" name="size" value="medium">
+            <label for="size4">M</label><br> 
+            <input type="checkbox" id="large" name="size" value="large">
+            <label for="size4">L</label><br>
+            <input type="checkbox" id="xlarge" name="size" value="xlarge">
+            <label for="xlarge">XL</label><br>
           </div>
         </div>
            <!--buttons for product types-->
@@ -74,17 +78,22 @@
             <input type="radio" id="prod3" name="prod" value="Jeans">
             <label for="prod3">Jeans</label><br>
             <input type="radio" id="prod4" name="prod" value="Pants">
-            <label for="prod4">Pants</label><br>
+            <label for="prod4">Sweatshirt</label><br>
             <input type="radio" id="prod5" name="prod" value="Dress">
             <label for="prod5">Dress</label><br>
+            <input type="radio" id="prod6" name="prod" value="Trousers">
+            <label for="prod6">Trousers</label><br>
+            <input type="radio" id="prod7" name="prod" value="Slipper">
+            <label for="prod7">Slippers</label><br>
           </div>
         </div>
+        <button type="button" id="searchBtn" onclick="searchProduct()">Search</button>
       </div>
         <!--here goes each product-->
         <se5ction class="product-list">
           <div class="producttxt"><h1>Products</h1></div>
-          <div class="product-container">
-            <div class="card">
+          <div id="product-container">
+            <!-- <div class="card">
               <a
                 href="https://www.lcwaikiki.eg/en-US/EG/product/LC-WAIKIKI/men's/Jean/7023213/3925650"
               >
@@ -175,14 +184,14 @@
                   Crew Neck Straight Long Sleeve Women's Body
                 </div>
                 <div class="price">319,20 EGP</div>
-              </a>
+              </a> -->
             </div>
           </div>
         </section>
       </div>
       <div id="totalprice"></div>
 
-      <div class="footer"></div>
+      <div class="footer">footer content</div>
     <script src="productsScript.js"></script>  
     </body>
   </html>

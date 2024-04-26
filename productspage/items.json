@@ -1,0 +1,66 @@
+{
+  "male_clothes": [
+    {
+      "name": "Men's Casual Shirt",
+      "image_path": "/images/mens_shirt.jpg",
+      "price": 29.99,
+      "size": "M"
+    },
+    {
+      "name": "Men's Slim Fit Jeans",
+      "image_path": "/images/mens_jeans.jpg",
+      "price": 49.99,
+      "size": "32"
+    },
+    {
+      "name": "Men's Sports Jacket",
+      "image_path": "/images/mens_jacket.jpg",
+      "price": 79.99,
+      "size": "L"
+    },
+    {
+      "name": "Men's Formal Trousers",
+      "image_path": "/images/mens_trousers.jpg",
+      "price": 39.99,
+      "size": "34"
+    },
+    {
+      "name": "Men's Classic Sneakers",
+      "image_path": "/images/mens_sneakers.jpg",
+      "price": 59.99,
+      "size": "10"
+    }
+  ],
+  "female_clothes": [
+    {
+      "name": "Women's Floral Dress",
+      "image_path": "/images/womens_dress.jpg",
+      "price": 39.99,
+      "size": "S"
+    },
+    {
+      "name": "Women's Skinny Jeans",
+      "image_path": "/images/womens_jeans.jpg",
+      "price": 44.99,
+      "size": "28"
+    },
+    {
+      "name": "Women's Blouse",
+      "image_path": "/images/womens_blouse.jpg",
+      "price": 24.99,
+      "size": "XS"
+    },
+    {
+      "name": "Women's Formal Skirt",
+      "image_path": "/images/womens_skirt.jpg",
+      "price": 34.99,
+      "size": "M"
+    },
+    {
+      "name": "Women's High Heels",
+      "image_path": "/images/womens_heels.jpg",
+      "price": 54.99,
+      "size": "8"
+    }
+  ]
+}
