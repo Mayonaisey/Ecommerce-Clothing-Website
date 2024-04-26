@@ -289,6 +289,49 @@ productsList.forEach(function (product) {
   // Append product div to container
   productContainer.appendChild(productDiv);
 });
+
+
+const filtersForm = document.getElementById("filters-form");
+const filteredProductsContainer = document.getElementById("product-container");
+
+// Add event listener to the form
+filtersForm.addEventListener("change", filterProducts);
+
+// Function to filter products based on selected filters
+function filterProducts() {
+  const selectedGender = document.querySelector('input[name="gender"]:checked').value;
+  const selectedSize = document.querySelector('input[name="size"]:checked').value;
+  const selectedType = document.querySelector('input[name="type"]:checked').value;
+
+  if (!selectedGender || !selectedSize || !selectedType) {
+alert("You should enter the 3 filters") ;
+   return;
+  }
+  // Filter products based on selected filters
+  const filteredProducts = products.filter(product => {
+    return product.gender === selectedGender &&
+           product.sizes.includes(selectedSize) &&
+           product.type === selectedType;
+  });
+
+  // Display filtered products
+  displayFilteredProducts(filteredProducts);
+}
+
+// Function to display filtered products
+function displayFilteredProducts(products) {
+  // Clear previous filtered products
+  filteredProductsContainer.innerHTML = "";
+
+  // Display filtered products
+  products.forEach(product => {
+    const productDiv = document.createElement("div");
+    productDiv.textContent = `${product.name} - Price: ${product.price} EGP`;
+    filteredProductsContainer.appendChild(productDiv);
+  });
+}
+
+
 function searchProduct() {
   if (document.getElementById("prod1").checked) {
     productContainer.innerHTML =
