@@ -31,7 +31,6 @@
         <div class="sidebar">
           <header id="filter"><i class="fa-solid fa-filter"></i> Filters</header>
           <!--first gender radio button-->
-          <div id="filters-form">
           <div class="gender-content">
           <button class="gender-btn" onclick="displayGender()">Gender
             <i class="fa fa-caret-down"></i>
@@ -41,7 +40,8 @@
               <label for="male">male</label><br>
               <input id="fem" type="radio" value="female" name="gender">
               <label for="fem">female</label><br>
-              
+              <input id="girl" type="radio" value="girls" name="gender">
+              <label for="girl">girls</label><br>
           </div>
          </div>
           <!--second is the dropdown menu for size-->
@@ -51,10 +51,6 @@
           </button>
           <div id="dropdown-size">
             <!--buttons for range of sizes-->
-            <input type="radio" id="girls1" name="size" value="9-10years">
-            <label for="girls1"> 9-10 years</label><br>
-            <input type="radio" id="girls2" name="size" value="10-12years">
-            <label for="girls2">10-12 years</label><br>
             <input type="radio" id="small" name="size" value="small">
             <label for="small"> S</label><br>
             <input type="radio" id="medium" name="size" value="medium">
@@ -89,9 +85,8 @@
         
         </div>
      
-        <!-- <button type="button" id="searchBtn" onclick="searchProduct()">Search</button> -->
+        <button type="button" id="searchBtn" onclick="searchProduct()">Search</button>
        </div>
-      </div>
         <!--here goes each product-->
         <se5ction class="product-list">
           <div class="producttxt"><h1>Products</h1></div>
@@ -102,7 +97,7 @@
       </div>
       <div id="totalprice"></div>
 
-      <div class="footer">footer content</div>
+      <div id="footer">footer content</div>
     <script src="productsScript.js"></script>  
     </body>
   </html>

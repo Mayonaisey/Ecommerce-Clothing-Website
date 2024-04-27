@@ -184,7 +184,7 @@ a {
   grid-column-gap: 20px;
   grid-row-gap: 20px;
 }
-.footer {
+#footer {
   padding: 2em;
   display: block;
 }
