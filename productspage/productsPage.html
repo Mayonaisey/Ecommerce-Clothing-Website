@@ -10,7 +10,7 @@
       <script src="https://kit.fontawesome.com/69992cfeb0.js"></script>
     </head>
     <body>
-      <div class="navbar">
+     <div class="navbar">
         <a href="home.html"><img src="images\logo.jpg" class="logo" alt="cannot load pic" width="50px"></a>
         <div class="search">
             <form action="#">
@@ -25,10 +25,10 @@
           <a href="likeditems.html"><i class="fa-solid fa-heart"></i></a>
           <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
         </div>
-      </div>
-
-      <div id="page">
-        <div class="sidebar">
+    </div>
+   <div id="fullpage">
+    <div id="page">
+     <div class="sidebar">
           <header id="filter"><i class="fa-solid fa-filter"></i> Filters</header>
           <!--first gender radio button-->
           <div class="gender-content">
@@ -43,9 +43,9 @@
               <input id="girl" type="radio" value="girls" name="gender">
               <label for="girl">girls</label><br>
           </div>
-         </div>
+         </div> <!--close tag for gender-content-->
           <!--second is the dropdown menu for size-->
-          <div class="size-content">
+       <div class="size-content">
           <button class="size-btn" onclick="displaySize()">Size
             <i class="fa fa-caret-down" ></i>
           </button>
@@ -60,7 +60,7 @@
             <input type="radio" id="xlarge" name="size" value="xlarge">
             <label for="xlarge">XL</label><br>
           </div>
-            </div>
+        </div><!--close tag for size-content-->
            <!--buttons for product types-->
            <div class="product-content">
           <button class="product-btn" onclick="displayProduct()">Product Type
@@ -82,22 +82,20 @@
             <input type="radio" id="prod7" name="prod" value="Slipper">
             <label for="prod7">Slippers</label><br>
           </div>
-        
-        </div>
+         </div><!--close tag for product-content-->
      
-        <button type="button" id="searchBtn" onclick="searchProduct()">Search</button>
-       </div>
-        <!--here goes each product-->
-        <se5ction class="product-list">
-          <div class="producttxt"><h1>Products</h1></div>
-            <div id="product-container">
-            </div>
-          </div>
-        </section>
-      </div>
-      <p><b>Counter: </b> <span id="counter">0</span></p>
+         <button type="button" id="searchBtn" onclick="searchProduct()">Search</button>
+     </div> <!--close tag for sidebar-->
+          <!--here goes each product-->
+          <se5ction class="product-list">
+             <div class="producttxt"><h1>Products</h1></div>
+             <div id="product-container"></div>
+          </section>
+    </div><!--close tag for page-->
+           <p><b>Counter: </b> <span id="counter">0</span></p>
 
-      <div id="footer">footer content</div>
-    <script src="productsScript.js"></script>  
-    </body>
+          <div id="footer">footer content</div>
+   </div> <!--close tag for fullpage-->
+           <script src="productsScript.js"></script>  
+          </body>
   </html>
