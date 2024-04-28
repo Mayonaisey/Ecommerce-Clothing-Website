@@ -249,34 +249,42 @@ let products = clothes;
 const productContainer = document.getElementById("product-container");
 
 function makeCards(productsList) {
+  let j = 0;
   productsList.forEach(function (product) {
     // Create product div
-    var productDiv = document.createElement("div");
-    productDiv.classList.add("card");
-
+    var btn = document.createElement("button");
+    btn.id = "prod" + j;
+    btn.classList.add("card");
     // Add product details
     var image = document.createElement("img");
     image.src = product.image_path;
     image.classList.add("img");
-    productDiv.appendChild(image);
+    btn.appendChild(image);
+
+    var tooltiptext = document.createElement("span");
+    tooltiptext.textContent = product.name;
+    tooltiptext.classList.add("tooltiptext");
+    btn.appendChild(tooltiptext);
 
     var name = document.createElement("p");
     name.textContent = product.name;
     name.classList.add("text");
-    productDiv.appendChild(name);
+    btn.appendChild(name);
 
     var price = document.createElement("p");
     price.textContent = "Price: " + product.price + " EGP";
     price.classList.add("price");
-    productDiv.appendChild(price);
+    btn.appendChild(price);
 
     var sizes = document.createElement("p");
     sizes.textContent = "Sizes: " + product.size.join(", ");
     sizes.classList.add("sizes");
-    productDiv.appendChild(sizes);
+    btn.appendChild(sizes);
 
     // Append product div to container
-    productContainer.appendChild(productDiv);
+    btn.addEventListener("click", () =>{showItem( btn.id);});
+    productContainer.appendChild(btn);
+    j++;
   });
 }
 makeCards(products);
@@ -318,17 +326,14 @@ function filterProducts() {
     if (
       clothes[i].gender.toUpperCase() == genderSelected.toUpperCase() &&
       clothes[i].type.toUpperCase() == prodSelected.toUpperCase()
-    ) {let h=0;
+    ) {
       for (let j = 0; j < clothes[i].size.length; j++) {
         if (clothes[i].size[j].toUpperCase == sizeSelected.toUpperCase) {
           fileteredProducts.add(clothes[i]);
-          console.log(++h);
         }
       }
     }
   }
-  console.log(fileteredProducts);
-
   makeCards(fileteredProducts);
   if (productContainer.innerHTML == "") {
     var name = document.createElement("p");
@@ -337,3 +342,21 @@ function filterProducts() {
     productContainer.appendChild(name);
   }
 }
+
+function showItem(id) {
+   console.log(id);
+
+  let btn=document.getElementById(id);
+  let page=document.getElementById("page");
+  page.innerHTML="";
+
+
+  page.appendChild(btn);
+
+}
+
+// let counter = document.getElementById("counter")
+// counter.addEventListener("click", func);
+// function func(){
+//   counter.innerHTML=parseInt(counter.innerText)+1;
+// }
