@@ -37,6 +37,7 @@ function scrollToTop() {
 
 }
 
+
 /*var itemCount = 0; 
 
 function addToCart() {

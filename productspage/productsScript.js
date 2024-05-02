@@ -37,7 +37,7 @@ function displayProduct() {
 var clothes = [
   {
     id: "prod0",
-    gender: "male",
+    gender: "men",
     type: "jeans",
     name: "780 Men's Jogger Jeans",
     image_path: "images/men/l_20241-s4fi43z8-m0u-93-75-91-182_a.webp",
@@ -48,7 +48,7 @@ var clothes = [
   },
   {
     id: "prod1",
-    gender: "male",
+    gender: "men",
     type: "jeans",
     name: "750 Slim Fit Men's Denim Trousers",
     image_path: "images/men/l_20232-w3dr37z8-h45_u.webp",
@@ -58,7 +58,7 @@ var clothes = [
   },
   {
     id: "prod2",
-    gender: "male",
+    gender: "men",
     type: "jeans",
     name: "770 Super Skinny Men's Denim",
     image_path: "images/men/l_20232-w3dr79z8-309_u.webp",
@@ -68,7 +68,7 @@ var clothes = [
   },
   {
     id: "prod3",
-    gender: "male",
+    gender: "men",
     type: "t-shirt",
     name: "Crew Neck Short Sleeve Men's T-shirt",
     image_path: "images/men/l_20232-w32977z8-lal-91-78-95-189_a.webp",
@@ -78,7 +78,7 @@ var clothes = [
   },
   {
     id: "prod4",
-    gender: "male",
+    gender: "men",
     type: "t-shirt",
     name: "Polo Neck Short Sleeve Patterned Pike Men's T-shirt",
     image_path: "images/men/l_20241-s4io96z8-lqq-98-78-92-187_a.webp",
@@ -88,7 +88,7 @@ var clothes = [
   },
   {
     id: "prod5",
-    gender: "male",
+    gender: "men",
     type: "sweatshirt",
     name: "Crew Neck Long Sleeve Men's Sweatshirt",
     image_path: "images/men/l_20241-s41484z8-cvl-97-78-96-188_a.webp",
@@ -98,7 +98,7 @@ var clothes = [
   },
   {
     id: "prod6",
-    gender: "male",
+    gender: "men",
     type: "sweatshirt",
     name: "Crew Neck Long Sleeve Men's Sweatshirt",
     image_path: "images/men/l_20241-s41484z8-v9v-97-78-96-188_a.webp",
@@ -108,7 +108,7 @@ var clothes = [
   },
   {
     id: "prod7",
-    gender: "male",
+    gender: "men",
     type: "sweatshirt",
     name: "Crew Neck Long Sleeve Men's Sweatshirt",
     image_path: "images/men/l_20241-s41484z8-ven-99-76-96-188_a.webp",
@@ -118,7 +118,7 @@ var clothes = [
   },
   {
     id: "prod8",
-    gender: "female",
+    gender: "women",
     type: "dress",
     name: "Square Collar Straight Strap Poplin Women's Dress",
     image_path: "images/women/l_20231-s3ec25z8-rql-84-59-91-175_a.webp",
@@ -128,7 +128,7 @@ var clothes = [
   },
   {
     id: "prod9",
-    gender: "female",
+    gender: "women",
     type: "dress",
     name: "Crew Neck Patterned Long Sleeve Women's Dress",
     image_path: "images/women/l_20241-s4hm69z8-lqq-83-59-90-174_a.webp",
@@ -138,7 +138,7 @@ var clothes = [
   },
   {
     id: "prod10",
-    gender: "female",
+    gender: "women",
     type: "t-shirt",
     name: "Crew Neck Printed Short Sleeve Women's T-shirt",
     image_path: "images/women/black_tshirt.webp",
@@ -148,7 +148,7 @@ var clothes = [
   },
   {
     id: "prod11",
-    gender: "female",
+    gender: "women",
     type: "t-shirt",
     name: "Crew Neck Printed Short Sleeve Women's T-shirt",
     image_path: "images/women/purple_tshirt.webp",
@@ -158,7 +158,7 @@ var clothes = [
   },
   {
     id: "prod12",
-    gender: "female",
+    gender: "women",
     type: "blouse",
     name: "Crew Neck Patterned Long Sleeve Women's Blouse",
     image_path: "images/women/l_20232-w3da40z8-h6z-87-60-90-175_a.webp",
@@ -168,7 +168,7 @@ var clothes = [
   },
   {
     id: "prod13",
-    gender: "female",
+    gender: "women",
     type: "blouse",
     name: "Boat Collar Straight Short Sleeve Women's Blouse",
     image_path: "images/women/white_blouse.webp",
@@ -178,7 +178,7 @@ var clothes = [
   },
   {
     id: "prod14",
-    gender: "female",
+    gender: "women",
     type: "blouse",
     name: "Boat Collar Straight Long Sleeve Women's Blouse",
     image_path: "images/women/l_20231-s3jm35z8-r9j-84-59-91-175_a.webp",
@@ -188,7 +188,7 @@ var clothes = [
   },
   {
     id: "prod15",
-    gender: "female",
+    gender: "women",
     type: "trousers",
     name: "Elastic Waist Patterned Women's Palazzo Trousers",
     image_path: "images/women/l_20241-s4au41z8-sw5-83-60-90-176_a.webp",
@@ -198,7 +198,7 @@ var clothes = [
   },
   {
     id: "prod16",
-    gender: "female",
+    gender: "women",
     type: "trousers",
     name: "Women's Elastic Waist Straight Knitwear Trousers",
     image_path: "images/women/set_trousers_beige.webp",
@@ -208,7 +208,7 @@ var clothes = [
   },
   {
     id: "prod17",
-    gender: "female",
+    gender: "women",
     type: "trousers",
     name: "Elastic Waist Comfortable Fit Muslin Women's Trousers",
     image_path: "images/women/black_trousers.webp",
@@ -218,7 +218,7 @@ var clothes = [
   },
   {
     id: "prod18",
-    gender: "female",
+    gender: "women",
     type: "slippers",
     name: "Single Band Women's Slippers",
     image_path: "images/women/l_20241-s4i215z8-j5e_a.webp",
@@ -228,7 +228,7 @@ var clothes = [
   },
   {
     id: "prod19",
-    gender: "female",
+    gender: "women",
     type: "slippers",
     name: "Single Band Women's Slippers",
     image_path: "images/women/l_20241-s4i215z8-cr8_a.webp",
@@ -297,8 +297,17 @@ var clothes = [
     quantity: 25,
   },
 ];
-let products = clothes;
+let products=clothes;
 const productContainer = document.getElementById("product-container");
+
+///////////////////////////////////trying to tie homepage to productsPage//////////////////////////////////////
+// let buttonClicked="hi";
+// let anchors=document.getElementsByClassName("home-anchor");
+// for(let i=0; i<anchors.length; i++){
+//     anchors[i].addEventListener("click", ()=>{
+//       changeButton(anchors[i].textContent);
+//     });
+// }
 
 function makeCards(productsList) {
   // let j = 0;
@@ -344,36 +353,6 @@ function makeCards(productsList) {
 }
 makeCards(products);
 
-let genderSelected = "hi";
-let sizeSelected = "hi";
-let prodSelected = "hi";
-
-function searchProduct() {
-  let gen = document.getElementsByName("gender");
-  let siz = document.getElementsByName("size");
-  let prod = document.getElementsByName("prod");
-
-  for (let i = 0; i < gen.length; i++) {
-    if (gen[i].checked) {
-      genderSelected = gen[i].value;
-    }
-  }
-  for (let i = 0; i < siz.length; i++) {
-    if (siz[i].checked) {
-      sizeSelected = siz[i].value;
-    }
-  }
-  for (let i = 0; i < prod.length; i++) {
-    if (prod[i].checked) {
-      prodSelected = prod[i].value;
-    }
-  }
-  if (genderSelected == "hi" || sizeSelected == "hi" || prodSelected == "hi") {
-    alert("You should enter 3 filters");
-    return;
-  }
-  filterProducts();
-}
 function filterProducts() {
   let fileteredProducts = new Set([]);
   productContainer.innerHTML = "";
@@ -397,7 +376,7 @@ function filterProducts() {
     productContainer.appendChild(name);
   }
 }
-
+let sizeIsSelected=0;//to check if a size is selected or not
 function showItem(id) {
   
   let number = parseInt(extractNumber(id));
@@ -482,7 +461,12 @@ function showItem(id) {
   addToCartBtn.classList.add("addToCartBtn");
   addToCartBtn.textContent = "Add To Cart";
   addToCartBtn.addEventListener("click", () => {
-    incCartNumber("Cart-Quantity");
+    //if size is selected and quantity>0
+    if(sizeIsSelected==1){
+    incCartNumber("Cart-Quantity");}
+    else{
+      alert("You should choose Size and Quantity");
+    }
   });
   addToCartBtn.addEventListener("click", () => {
     addToArray(number);
@@ -516,6 +500,8 @@ function extractNumber(id) {
   let number = str.match(/\d+/g);
   return number;
 }
+
+
 function colorUp(id) {
   let sizesButtons=document.getElementsByClassName("sizesButtons");
   for(let i=0; i<sizesButtons.length; i++){
@@ -524,7 +510,40 @@ function colorUp(id) {
     }
   }
   document.getElementById(id).style.backgroundColor="rgb(0, 58, 205)";
+  sizeIsSelected=1;
 }
+let genderSelected = "hi";
+let sizeSelected = "hi";
+let prodSelected = "hi";
+
+function searchProduct() {
+  let gen = document.getElementsByName("gender");
+  let siz = document.getElementsByName("size");
+  let prod = document.getElementsByName("prod");
+
+  for (let i = 0; i < gen.length; i++) {
+    if (gen[i].checked) {
+      genderSelected = gen[i].value;
+    }
+  }
+  for (let i = 0; i < siz.length; i++) {
+    if (siz[i].checked) {
+      sizeSelected = siz[i].value;
+    }
+  }
+  for (let i = 0; i < prod.length; i++) {
+    if (prod[i].checked) {
+      prodSelected = prod[i].value;
+    }
+  }
+  if (genderSelected == "hi" || sizeSelected == "hi" || prodSelected == "hi") {
+    alert("You should enter 3 filters");
+    return;
+  }
+  filterProducts();
+}
+
+
 
 // let counter = document.getElementById("counter")
 // counter.addEventListener("click", func);
@@ -572,6 +591,7 @@ function printDetails(){
   for(let i=0; i<storedCart.length; i++){
     console.log(storedCart[i].gender + storedCart[i].size + storedCart[i].price + storedCart[i].type + storedCart[i].name + storedCart[i].quantity + storedCart[i].image);
   }
+  
 }
 let quantity=0;
 if(cart.length>0){
@@ -582,6 +602,28 @@ if(cart.length>0){
   Cart.innerHTML = quantity;
 }
 
+function clearCart(){  cart=[];
+  localStorage.removeItem('cart');
+//and cart-quantity=0
+var Cart = document.getElementById("Cart-Quantity");
+Cart.innerHTML = "0";
+}
+  
+//onclick on cart icon, pass the cart values to another localstorage that deals with checkout and then empty the cart
+
+//changeButton function fills an array with products of the anchor chosen in homepage and displays the products
+// function changeButton(text){
+//   let products = [];
+//   buttonClicked=text;
+//   console.log(buttonClicked);
+//   clothes.forEach(element => {
+//     if(element.gender.toLowerCase()==buttonClicked.toLowerCase()){
+//       console.log(element.name);
+//       products.push(element);
+//     }
+//   });
+//   makeCards(products);
+// }
 // window.addEventListener("popstate", detectHistory);
 // history.pushState(null, null, window.location.pathname);
 // function detectHistory() {}
