@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Changes</title>
+    <link rel="stylesheet" href="adminchanges.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Changes</th>
+        </tr>
+        <tr>
+            <td>
+                <img src="image20.jpeg" alt="shirt">
+                <p>Blouse Long Sleeve</p>
+                <p class="price hidden">Price: <input type="text" value="20.00" readonly></p>
+                <p class="error"></p>
+            </td>
+            <td>
+                <button onclick="toedit(this)">Edit</button>
+                <button onclick="deleteRow(this)">Delete</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="image18.webp" alt="shirt">
+                <p>White Vest</p>
+                <p class="price hidden">Price: <input type="text" value="15.99" readonly></p>
+                <p class="error"></p>
+            </td>
+            <td>
+                <button onclick="toedit(this)">Edit</button>
+                <button onclick="deleteRow(this)">Delete</button>
+            </td>
+        </tr>
+    </table>
+    <script src="adminchanges.js"></script>
+</body>
+</html>
