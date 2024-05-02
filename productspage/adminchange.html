@@ -6,35 +6,32 @@
     <link rel="stylesheet" href="adminchanges.css">
 </head>
 <body>
-    <table>
-        <tr>
-            <th>Product</th>
-            <th>Changes</th>
-        </tr>
-        <tr>
-            <td>
-                <img src="image20.jpeg" alt="shirt">
-                <p>Blouse Long Sleeve</p>
-                <p class="price hidden">Price: <input type="text" value="20.00" readonly></p>
-                <p class="error"></p>
-            </td>
-            <td>
-                <button onclick="toedit(this)">Edit</button>
-                <button onclick="deleteRow(this)">Delete</button>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <img src="image18.webp" alt="shirt">
-                <p>White Vest</p>
-                <p class="price hidden">Price: <input type="text" value="15.99" readonly></p>
-                <p class="error"></p>
-            </td>
-            <td>
-                <button onclick="toedit(this)">Edit</button>
-                <button onclick="deleteRow(this)">Delete</button>
-            </td>
-        </tr>
+    <button id="addProductButton">Add Product</button>
+
+    <div id="addProductForm">
+        <h2>Add New Product</h2>
+        <form id="newProductForm">
+            <label for="newProductImage">Product Image URL:</label>
+            <input type="text" id="newProductImage" name="newProductImage" required><br>
+            <label for="newProductName">Product Name:</label>
+            <input type="text" id="newProductName" name="newProductName" required><br>
+            <label for="newProductPrice">Product Price:</label>
+            <input type="text" id="newProductPrice" name="newProductPrice" required><br>
+            <input type="submit" value="Done">
+        </form>
+    </div>
+    <table id="productsTable">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Changes</th>
+            </tr>
+        </thead>
+        <tbody>
+          
+        </tbody>
     </table>
     <script src="adminchanges.js"></script>
 </body>
