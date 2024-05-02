@@ -21,7 +21,7 @@
             </form>
         </div>
         <div class="navbaricons">
-          <a href="homepage.html"><i class="fa-solid fa-house" id="homepage"></i></a>
+          <a href="home.html"><i class="fa-solid fa-house" id="homepage"></i></a>
           <a href="likeditems.html"><i class="fa-solid fa-heart"></i></a>
             <a href="cart.html" class="icon-Cart"><i class="fa-solid fa-cart-shopping"><span id="Cart-Quantity">0</span></i></a>
         </div>
@@ -36,12 +36,12 @@
             <i class="fa fa-caret-down"></i>
           </button>
           <div id="radio-group">
-              <input id="male" type="radio" value="male" name="gender">
-              <label for="male">male</label><br>
-              <input id="fem" type="radio" value="female" name="gender">
-              <label for="fem">female</label><br>
-              <input id="girl" type="radio" value="girls" name="gender">
-              <label for="girl">girls</label><br>
+              <input id="male" type="radio" value="MEN" name="gender">
+              <label for="male">MEN</label><br>
+              <input id="fem" type="radio" value="WOMEN" name="gender">
+              <label for="fem">WOMEN</label><br>
+              <input id="girl" type="radio" value="GIRLS" name="gender">
+              <label for="girl">GIRLS</label><br>
           </div>
          </div> <!--close tag for gender-content-->
           <!--second is the dropdown menu for size-->
@@ -85,6 +85,7 @@
          </div><!--close tag for product-content-->
      
          <button type="button" id="searchBtn" onclick="searchProduct()">Search</button>
+         <button type="button" id="exitBtn" onclick="clearCart()">Exit Page</button>
      </div> <!--close tag for sidebar-->
           <!--here goes each product-->
           <se5ction class="product-list">
@@ -98,5 +99,6 @@
    </div> <!--close tag for fullpage-->
    <script src="cart.js"></script>  
    <script src="productsScript.js"></script>  
+
   </body>
   </html>
