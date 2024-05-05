@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+
+    label{
+      margin: 30px;
+      font-weight: bold;
+      color: #1f4959;
+      font-size: medium;
+  
+    }
+    input{
+      margin: 10px;
+    }
+    #send{
+      margin-left:300px ;
+      padding: 7px;
+      background-color: #1f4959;
+      color: white;
+      
+    }
+    #send:hover{
+      opacity: 0.8;
+      box-shadow: 5px 5px 5px rgb(142, 141, 141);
+    }
+    #email:hover,#password:hover{
+      opacity: 0.7;
+      text-shadow: 5px 5px 5px rgb(126, 126, 126);
+    }
+  
+    h1{
+      margin-top: 55px;
+      margin-bottom: 30px;
+      margin-left: 40px;
+      color: #1f4959;
+      text-align: left;
+    }
+
+    
+    .content{
+margin-left: 100px;    }
+
+.smalltext{
+  color: rgb(178, 175, 175);
+  text-decoration: underline;
+}
+
+  </style>
+
+  <script>
+    function loadPage(url, targetDiv) {
+      var x = new XMLHttpRequest();
+      x.onreadystatechange = function() {
+        if (this.readyState === 4 && this.status === 200) {
+          document.getElementById(targetDiv).innerHTML = this.responseText;
+        }
+      };
+      x.open("GET", url, true);
+      x.send();
+    }
+
+    function validateForm() {
+      var email = document.getElementById("email");
+      var passwordt = document.getElementById("password");
+      var valid = true;
+
+    loadPage();
+
+      return valid;
+    }
+  </script>
+
+</head>
+<body>
+  <div>
+    <div>
+      <form  class="form" onsubmit="return validateForm()" action="productsPage.html" target="_blank" >
+
+        <h1> Login With Your Email:</h1>
+        <hr>
+<div class="content">
+        <label for="email">  Email*</label>
+        <input id="email" type="email" required>
+        <br>
+        <label for="password"> Password*</label>
+        <input id="password" type="password" required pattern=".{8,}" title="Eight or more characters">
+
+    <input id="send" type="submit" value="Done"  >
+      </div>
+      </form>
+      
+    </div>
+<div>
+  <span class="smalltext"> <a  class="signin"  href="#"    onclick="loadPage('addaccount.html', 'leftside')"><h4> Do not have an account.   Create one </h4>  </a> </span>  </div>
+    
+  
+
+  </div>
+</body>
+</html>

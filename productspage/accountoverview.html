@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <style>
+.image{
+   height: 250px;
+display: inline-block;
+  margin-top: 30px;
+
+}
+.div{
+  display: flex;
+      flex-direction: column; 
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      vertical-align: middle;
+      width: 100%;
+      height: 100%;
+
+    }
+.soradiv{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  width: 100%;
+  height: 250px;
+}
+
+.kalam{
+  flex: 1;
+color: rgb(32, 31, 31);
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-weight:bold;
+text-align: center;
+}
+.smalltext{
+  color: rgb(178, 175, 175);
+  text-decoration: underline;
+}
+button{
+  padding: 10px;
+  color: white;
+  background-color: black;
+}
+button:hover{
+  opacity: 0.8;
+  box-shadow: 5px 5px 5px rgb(150, 148, 148);
+}
+
+.createacc{
+  color: white;
+}
+.createacc:active{
+  color: grey;
+}
+.createacc:hover{
+  color: white;
+}
+
+
+
+  </style>
+</head>
+<body>
+  <div class="div"> 
+
+    
+    <div class="soradiv">
+  <img src="zahapics/ppppppp.jpg" class="image">
+</div>
+<div class="kalam">
+
+  <h1> <br>No saved account. </h1>
+ 
+  <button ><a class="createacc"  href="#"    onclick="loadPage('addaccount.html', 'leftside')"> Create Account</a></button>
+
+  <span class="smalltext"> <a  class="signin"  href="#"    onclick="loadPage('signin.html', 'leftside')"><h5> already have an account. Sign in</h5>  </a> </span>
+    </div>
+  
+  </div>
+
+  
+
+
+<script>
+  //deh el fn el btfta7 el url el 3ayzo fe same exact page bas fe div mo3yan
+
+
+  /*function loadPage(url, targetDiv) {
+    var x = new XMLHttpRequest();
+   x.onreadystatechange = function() {
+        document.getElementById(targetDiv).innerHTML = this.responseText;
+    };
+    x.open("GET", url, true);
+    x.send();
+  }*/
+
+  function loadPage(url, targetDivId) {
+    fetch(url)
+        .then(function(response) {
+            return response.text();
+        })
+        .then(function(html) {
+            document.getElementById(targetDivId).innerHTML = html;
+        })
+       }
+
+</script>
+</body>
+</html>

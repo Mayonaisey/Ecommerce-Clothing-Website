@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>new address</title>
+  <style>
+
+
+label{
+  font-weight: bold;
+  
+}
+input{
+  margin-top: 10px;
+}
+.save{
+  color: white;
+  background-color: rgb(161, 160, 160);
+  padding: 5px;
+  border: none;
+  margin: 5px;
+  margin-top: 10px;
+}
+.save:hover{
+  opacity: 0.7;
+  box-shadow: 5px 5px 5px rgb(201, 200, 200);
+}
+.big{
+  display: flex;
+  flex-direction: row;
+}
+
+.sora{
+  margin-right: 0px;
+  margin-left: 100px;
+  margin-top: 30px;
+  width: 200px;
+  height: 200px;
+}
+
+.right{
+  flex: 2;
+  margin-left: 100px;
+  margin-right: 0px;
+
+
+}
+.right input:focus{
+  color: rgb(46, 108, 46);
+}
+
+.right.success input{
+  border-color: rgb(60, 233, 60);
+}
+
+.right.error input{
+  border-color: rgb(196, 22, 22);
+}
+
+h1{
+  text-align: center;
+}
+
+.smalltext{
+  color: rgb(178, 175, 175);
+  text-decoration: underline;
+}
+#passmessage{
+  font-size: 14px;
+  margin: 0px;
+  margin-top:15px ;
+  color: white;
+}
+
+  </style>
+
+
+</head>
+<body>
+<div class="big">
+
+  
+<div class="right">
+
+  <h1>Add New Account</h1>
+<hr>
+  <form id="form" onsubmit="validateForm()" >
+
+    <label for="username"> Full name * </label>
+<input  id="username" type="text" required  >
+
+<br>
+
+<label for="number"> Phone Number * </label>
+<input  id="number" type="tel" pattern="0(10|11|12|15)\d{8}" required  title="enter valid phone number ">
+<br>
+
+
+    <label for="country"> City * </label>
+<input  id="country" type="text" required placeholder="Cairo / Giza /....">
+<br>
+
+<label for="Address"> Address * </label>
+<input  id="Address" type="text" required>
+<br>
+
+<label for="details">  Location Details </label>
+<input  id="details" type="text" required >
+
+<br>
+
+<label for="email"> Email * </label>
+<input  id="email" type="email" required >
+
+<br>
+<label for="password">  Create Password * </label>
+<input  id="password" type="password" required  pattern="(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one uppercase and lowercase letter, and at least 8 characters" >
+
+<br>
+
+<label for="password2">   Confirm password  * </label>
+<input  id="password2" type="password" required 
+pattern=".{8,}" title="Eight or more characters">
+
+<br>
+<p id="passmessage"></p>
+
+
+
+<input id="checkbox" type="checkbox" required >
+<label for="checkbox"> i agree to the terms and conditions. </label>
+
+<br>
+<input  class="save" type="submit" value="SAVE ACCOUNT"  >
+
+
+
+
+  </form>
+
+  <div>
+    <span class="smalltext"> <a  class="signin"  href="#"    onclick="loadPage('signin.html', 'leftside')"><h4> already have an account. Sign in</h4>  </a> </span>  </div>
+</div>
+
+<div class="left">
+  <img  class="sora" src="zahapics/insideadd.png">
+</div>
+</div>
+
+
+
+
+   <script src="js-addacc.js"></script>
+   <script src="js-edit.js"></script>
+
+
+
+</body>
+</html>

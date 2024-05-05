@@ -1,0 +1,259 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shopingoo</title>
+  <style> 
+  body{
+    margin: 0%;
+  /*  background: linear-gradient(to right,#4f8b6e,#3e936a, #14452f,#13442e);*/
+  background-color: whitesmoke;
+  }
+
+a{
+  text-decoration: none;
+}
+a:active{
+  color: black;
+  transition-duration: 0s;
+  transform: rotate();
+}
+a:hover{
+  color: rgb(55, 234, 55);
+}
+  .main{
+    margin-left: 170px;
+margin-right: 170px;
+/*background: linear-gradient(to right,#4f8b6e, #14452f);*/
+background-color: whitesmoke;
+
+    width: 1090px;
+    height: 665px;
+    display: flex;
+  }
+
+  .rightside{
+    margin-top: 50px;
+    width: 350px;
+    height: 500px;
+    margin-right: 70px;
+    display: flex;
+  flex-direction: column;
+
+
+
+  }
+.leftside{
+  margin-top: 50px;
+  background-color: white;
+  margin-left: 0px;
+  display: flex;
+  height: 500px;
+  width: 1300px;
+  display: 2fr;
+  border: 1px solid rgb(26, 99, 26);
+  box-shadow: 5px 5px 5px rgb(163, 162, 162);
+
+
+
+}
+.upperright{
+  background-color: rgb(244, 242, 242);
+  border: 2px solid rgb(26, 99, 26);
+  text-align: center;
+  height: 30%;
+  justify-content: left;
+
+
+}
+.p1{
+  font-weight: bold;
+  margin: 40px;
+  margin-left: 15px;
+  font-size: medium;
+  text-align: left;
+}
+.p2{
+  margin: 50px;
+  font-size: 20px;
+
+}
+.lowerright{
+
+flex: 2; 
+ background-color:white;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  border: 2px solid rgb(26, 99, 26);
+
+}
+
+/*.accounticon{
+  border-radius: 80%;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+
+}*/
+.one{
+  background-color: white;
+  flex: 1;
+  padding: 5px;
+margin-bottom: 15px;
+margin-top: 0px;
+padding-top: 10px;
+}
+.two{
+  background-color: white;
+  flex: 1;
+  padding: 5px;
+
+padding-top: 20px;
+
+
+
+
+}
+.three{
+  background-color: white;
+  flex: 1;
+  padding: 5px;
+  padding-top: 20px;
+
+
+}
+.four{
+  background-color: white;
+  flex: 1;
+  padding: 5px;
+  padding-top: 20px;
+
+
+}
+.five{
+  background-color: white;
+  flex: 1;
+  padding: 10px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  margin-bottom: 5px;
+
+}
+
+.text{
+  display: inline-block;
+  vertical-align: middle;
+  
+}
+
+
+
+  </style>
+  <script>
+    //deh el fn el btfta7 el url el 3ayzo fe same exact page bas fe div mo3yan
+
+  
+    /*function loadPage(url, targetDiv) {
+      var x = new XMLHttpRequest();
+     x.onreadystatechange = function() {
+          document.getElementById(targetDiv).innerHTML = this.responseText;
+      };
+      x.open("GET", url, true);
+      x.send();
+    }
+    window.onload = function() {
+    loadPage('accountoverview.html', 'leftside');};*/
+function loadPage(url, targetDivId) {
+    fetch(url)
+        .then(function(response) {
+            return response.text();
+        })
+        .then(function(html) {
+            document.getElementById(targetDivId).innerHTML = html;
+        })
+       }
+
+window.onload = function() {
+    loadPage('accountoverview.html', 'leftside');
+};
+
+
+</script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+  <div class="main">
+    <div class="rightside">
+      <div class="upperright">
+        <p class="p1"> WELCOME </p>
+      </div>
+
+      <div class="lowerright">
+
+        <div class="one"> 
+        <a href="#" onclick="loadPage('accountoverview.html', 'leftside')"> 
+           
+        <!--  <img src="accounticon2.png" class="accounticon"> -->   
+        <i class="fa-solid fa-user" style="color: rgb(29, 158, 29);"></i>        <span class="text">  ACCOUNT OVERVIEW </span>
+        </a>
+      </div>
+
+
+      <div class="two">
+        <hr>
+
+        <a href="#" onclick="loadPage('wishlist.html', 'leftside')">
+        
+         <!--  <img src="wishlisticon.png" class="accounticon"> -->
+         <i class="fa-solid fa-heart" style="color: rgb(29, 158, 29);"></i>
+
+          <span class="text">  MY WISHLIST</span>
+        </a>
+      </div>
+
+        <br>
+
+        <div class="three">
+          <hr>
+
+        <a href="#" onclick="loadPage('orders.html', 'leftside')">
+          <!--          <img src="ordericon4.png" class="accounticon"> -->
+          <i class="fa-solid fa-cart-shopping" style="color:rgb(29, 158, 29);"></i>
+          <span class="text"> ORDERS </span>
+        </a>
+      </div>
+        <br>
+
+        <div class="four">
+          <hr>
+
+        <a href="#" onclick="loadPage('contactus.html', 'leftside')">
+          <!--          <img src="contacticon.png" class="accounticon"> -->
+          <i class="fa-solid fa-phone" style="color: rgb(29, 158, 29);"></i>
+          <span class="text"> CONTACT US </span>
+        </a>
+      </div>
+
+      <div class="five">
+        <hr>
+
+        <a href="#" onclick="loadPage('edit.html', 'leftside')">
+          <i class="fa-solid fa-pen-to-square" style="color:rgb(29, 158, 29);"></i>
+          <span class="text"> EDIT INFO </span>
+        </a>
+      </div>
+
+      </div>
+    </div>
+  
+
+    <div class="leftside" id="leftside">
+    </div>
+  </div>
+</body>
+</html>
