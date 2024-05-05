@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="cartWeb.css">
+    </head>
+    <body>
+        <div class="header">
+        </div>
+        <hr>
+        <div class="body">
+          <h1>My Cart </h1>
+          <div class="cart">
+            <div class="listcart" id="parent">
+             <!-- <table id="cart-table"> -->
+               <div class="image">
+                 image
+               </div>
+                   
+               <div class="cart-info">
+                 <div class="name">Name</div>
+                 <div class="code">code</div>
+                 <br><br>
+                 <div class="size">size:</div>
+                </div>
+                    
+               <div class="quan">
+                 <button id="min">-</button>
+                 <input id="quantity" type="text" value="1" readonly>
+                 <button id="plus">+</button>
+                </div>
+
+                <div class="s">
+                      <input class="pr"id="price" type="text" value="100 EGP" readonly><br><br>
+                        <span>
+                          <button class="delete">d</button>
+                          <button id="wishlist">w</button>
+                        </span>
+               </div>
+            </div>
+            
+            <div class="total-price">
+                <h2>Order Summary</h2>
+                <table>
+                    <tr>
+                        <td class="left">total price</td>
+                        <td></td>
+                        <td class="right">
+                         <div class="total">
+                            <input id="Tprice" type="text" value="" readonly>
+                          </div>
+                        </td>
+                    </tr>
+                    <tr>
+                     <td class="left"> Discounts </td>
+                     <td></td>
+                      <td class="right">
+                         <div class="discount">
+                            <input id="dis" type="text" value="10%" readonly>
+                         </div>
+                        </td>
+                  </tr>
+                   <tr>
+                    <td class="left">Grand Total</td>
+                    <td></td>
+                    <td class="right">
+                        <div class="grand-total">
+                            <input id="grand" type="text" value="" readonly>
+                        </div>
+                    </td>
+                 </tr>
+                </table>
+                   <a href="checkout.html"><button class="to-checkout" onclick="passValue()">Proceed to checkout</button>
+            </div>
+          </div>
+          </div>
+       
+        <script src="cartWeb.js"></script>
+    </body>
+</html>

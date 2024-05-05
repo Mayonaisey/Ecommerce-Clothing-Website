@@ -1,0 +1,114 @@
+body{
+    font-size: 16px;
+}
+.final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width:calc(100%+3px) ;
+    /* background-color: beige; */
+}
+.logo{
+    display: flex;
+    
+}
+.logo img{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width:100px;
+    height: 100px;
+    border-radius:20px;
+}
+.data {
+    background-color: aliceblue;
+    width:100%;
+    border: solid 2px black;
+    border-radius:10px;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width:max-content;
+}
+form{
+    width:300px;
+    padding: 15px 40px 40px;
+    margin: 50px auto 0;
+}
+#info-form{
+    padding-left: 30px; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+label{
+    display:block;
+    margin-bottom: 5px
+}
+input, select {
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+#bt{
+    text-align: center;
+     
+}
+#bt:hover{
+    background-color: rgb(18, 57, 32);
+    color:aliceblue;
+    cursor: pointer;
+}
+.ff{
+    display:flex;
+    padding-left:30px;
+}
+label[for="lb"]{
+    margin-top: auto;
+    padding-left:30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.total{
+    background-color: aliceblue;
+    margin-right: 0px;
+    margin-top: auto;
+    text-align: right; 
+    border: none;
+    outline:none;
+    font-weight:bold;
+    width:auto;
+    font-size: 16px;
+    font-weight: bold; 
+}
+#placeOrder{
+    width:425px;
+    height:40px;
+    padding-bottom:0px;
+    transition: 0.25s;
+}
+#placeOrder:hover{
+    background-color: rgb(34, 76, 34);
+    color:aliceblue;
+    cursor: pointer;
+}
+.error{
+    color: red;
+    font-size: 90%;
+}
+.row{
+    display:block;
+
+}
+/* .form-inline label, .form-inline input {
+    display: inline-block;
+    width: auto;
+    padding-right: 15px;
+}  */
