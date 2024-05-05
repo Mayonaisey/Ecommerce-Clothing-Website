@@ -1,3 +1,6 @@
+body{
+    background-color:#e2ddd7;
+}
 header {
     display: flex;
     align-items: center;
