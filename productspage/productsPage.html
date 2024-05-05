@@ -10,26 +10,36 @@
       <script src="https://kit.fontawesome.com/69992cfeb0.js"></script>
     </head>
     <body>
-     <div class="navbar">
+      <header>
+        <h1> <a href="home.html" id="website-name"> Trendista </a></h1>
         <a href="home.html"><img src="images\logo.jpg" class="logo" alt="cannot load pic" width="50px"></a>
-        <div class="search">
-            <form action="#">
-                <input type="text" placeholder="Search category..." name="search" size="60"  class="search-bar">
-                <button class="bt">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-            </form>
+        <div class="search-container">
+            <input id="search-bar" type="text" placeholder="Search...">
+            <button class="bt">
+              <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
         </div>
-        <div class="navbaricons">
-          <a href="home.html"><i class="fa-solid fa-house" id="homepage"></i></a>
-          <a href="likeditems.html"><i class="fa-solid fa-heart"></i></a>
-            <a href="cart.html" class="icon-Cart"><i class="fa-solid fa-cart-shopping"><span id="Cart-Quantity">0</span></i></a>
+        <div class="icons">
+            <div class="icon-container">
+                <i class="fas fa-user"></i>
+                <div class="user-box">
+                    <p>Log in to enjoy special offers for members and fast checkout.</p>
+                    <button class="user-btn login-btn"><a href="signin.html">Log In</a></button>
+                    <button class="user-btn signup-btn"><a href="addaccount.html">create account</a></button>
+                </div>
+            </div>
+            <a href="itemsinwishlist.html" target="_blank">
+                <i class="far fa-heart"></i>
+            </a>
+            <a href="../Cart/cartWeb.html" target="_blank" class="icon-Cart">  
+                          <i class="fas fa-shopping-cart"></i><span id="Cart-Quantity">0</span></i></a>
         </div>
-    </div>
+    </header>
+
    <div id="fullpage">
     <div id="page">
      <div class="sidebar">
-          <header id="filter"><i class="fa-solid fa-filter"></i> Filters</header>
+          <h4 id="filter"><i class="fa-solid fa-filter"></i> Filters</h4>
           <!--first gender radio button-->
           <div class="gender-content">
           <button class="gender-btn" onclick="displayGender()">Gender
@@ -73,13 +83,13 @@
             <label for="prod2">Blouse</label><br>
             <input type="radio" id="prod3" name="prod" value="Jeans">
             <label for="prod3">Jeans</label><br>
-            <input type="radio" id="prod4" name="prod" value="Pants">
+            <input type="radio" id="prod4" name="prod" value="Sweatshirt">
             <label for="prod4">Sweatshirt</label><br>
             <input type="radio" id="prod5" name="prod" value="Dress">
             <label for="prod5">Dress</label><br>
             <input type="radio" id="prod6" name="prod" value="Trousers">
             <label for="prod6">Trousers</label><br>
-            <input type="radio" id="prod7" name="prod" value="Slipper">
+            <input type="radio" id="prod7" name="prod" value="Slippers">
             <label for="prod7">Slippers</label><br>
           </div>
          </div><!--close tag for product-content-->
@@ -93,9 +103,33 @@
              <div id="product-container"></div>
           </section>
     </div><!--close tag for page-->
-           <p><b>Counter: </b> <span id="counter">0</span></p>
 
-          <div id="footer">footer content</div>
+          <div class="div-buttom">
+            <div class="alldiv help">
+                <h3>HELP</h3>
+                <p><a href="#contact-us">Contact Us</a></p>
+                <p><a href="#return&changes">Return and Change</a></p>
+                <p><a href="#shipping&delivery">Shipping and Delivery</a></p>
+            </div>
+    
+            <div class="alldiv about-us">
+                <h3>ABOUT US</h3>
+                <p><a href="#aboutus">About us</a></p>
+                <p><a href="#CareerOpportunities">Career Opportunities</a></p>
+                <p><a href="#CorporateSupport">corporate Support</a></p>
+            </div>
+    
+            <div class="alldiv policies">
+                <h3>POLICIES</h3>
+                <p><a href="#DataPrivacyAndSecurityPolicy">Data Privacy And Security Policy</a></p>
+                <p><a href="#TermsOfUSe">Terms Of Use</a></p>
+            </div>
+    
+            <div class="alldiv logo">
+                <h1>shopping</h1>
+            </div>
+    
+        </div>
    </div> <!--close tag for fullpage-->
    <script src="cart.js"></script>  
    <script src="productsScript.js"></script>  

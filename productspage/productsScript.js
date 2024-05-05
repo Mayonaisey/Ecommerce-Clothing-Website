@@ -42,9 +42,12 @@ var clothes = [
     name: "780 Men's Jogger Jeans",
     image_path: "images/men/l_20241-s4fi43z8-m0u-93-75-91-182_a.webp",
     image_path2: "images/men/blackjeans.webp",
+    image_path3:"images/men/black-pants.webp",
     price: "999.00",
     size: ["S", "M", "L"],
     quantity: 25,
+    
+
   },
   {
     id: "prod1",
@@ -75,6 +78,7 @@ var clothes = [
     price: "399.00",
     size: ["S", "M", "L"],
     quantity: 25,
+    image_path2:"images/men/gray-tshirt.webp"
   },
   {
     id: "prod4",
@@ -95,6 +99,7 @@ var clothes = [
     price: "899.00",
     size: ["S", "M", "L", "XL"],
     quantity: 25,
+    image_path2:"images/men/black-sweatshirt.webp"
   },
   {
     id: "prod6",
@@ -125,6 +130,7 @@ var clothes = [
     price: "1.349.10",
     size: ["S", "M", "L", "XL"],
     quantity: 25,
+    image_path2:"images/women/black_dress.webp"
   },
   {
     id: "prod9",
@@ -145,6 +151,7 @@ var clothes = [
     price: "249.00",
     size: ["S", "M", "L", "XL"],
     quantity: 25,
+    image_path2:"images/women/black-tshirt.webp" 
   },
   {
     id: "prod11",
@@ -165,6 +172,8 @@ var clothes = [
     price: "419,40",
     size: ["S", "M", "L"],
     quantity: 25,
+    image_path2:"images/women/green_shirt2.webp",
+    image_path3:"images/women/green_blouse3.webp"
   },
   {
     id: "prod13",
@@ -195,6 +204,8 @@ var clothes = [
     price: "799.00",
     size: ["S", "M", "L"],
     quantity: 25,
+    image_path2:"images/women/pattern_pants.webp",
+    image_path3:"images/women/pattern-pants3.webp"
   },
   {
     id: "prod16",
@@ -225,6 +236,8 @@ var clothes = [
     price: "499.00",
     size: ["S", "M", "L"],
     quantity: 25,
+    image_path2:"images/women/slippers-white2.webp"
+
   },
   {
     id: "prod19",
@@ -245,6 +258,9 @@ var clothes = [
     price: "769,30",
     size: ["S", "M", "L"],
     quantity: 25,
+    image_path2:"images/women/slippers-white2.webp",
+    image_path3:"images/kids/blue-dress.webp"
+
   },
   {
     id: "prod21",
@@ -394,13 +410,17 @@ function showItem(id) {
   image2.src = clothes[number].image_path2;
   image2.classList.add("image");
   photosContainer.appendChild(image2);
+  var image3 = document.createElement("img");
+  image3.src = clothes[number].image_path3;
+  image3.classList.add("image");
+  photosContainer.appendChild(image3);
 
   var details = document.createElement("div");
   details.classList.add("details");
 
   var heartIcon = document.createElement("i");
   heartIcon.innerHTML =
-    '<a href="wishlist.html"><i class="fa-regular fa-heart"></i></a>';
+    '<a><i class="fa-regular fa-heart"></i></a>';
   details.appendChild(heartIcon);
 
   var name = document.createElement("p");
