@@ -48,7 +48,6 @@
     //document.getElementsByClassName('edit').style.display = 'block';
 
   }
-
   //this function is by and for fatema hany
     function display(){
   let city=document.getElementById("City");
@@ -128,4 +127,16 @@ function save() {
   document.getElementById('newaddress').style.display = 'none';
   document.getElementById('newdetails').style.display = 'none';
   document.getElementById('saveButton').style.display = 'none';
+  
+}
+let city ,street,name,phone;
+function dispaly(){ 
+city=document.getElementById("City");
+street=document.getElementById("st");
+name=document.getElementById("Name");
+phone=document.getElementById("Phone");
+city.value=user.country;
+street.value=user.address;
+name.value=user.username;
+phone.value=user.number;
 }
