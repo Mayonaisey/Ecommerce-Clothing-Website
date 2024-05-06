@@ -324,6 +324,43 @@ const productContainer = document.getElementById("product-container");
 //       changeButton(anchors[i].textContent);
 //     });
 // }
+// function search(){
+//   const searchBox=document.getElementById("search-bar").value.toUpperCase();
+//   const storeItems=document.getElementById("product-container");
+//   const  PRODUCT=document.querySelectorAll(".card");
+//   const productName=document.getElementsByClassName("text");
+//   for(let i=0; i<productName.length; i++){
+//     let match=PRODUCT[i].getElementsByClassName("text")[0];
+//     if(match){
+//      let textValue= match.textContent || match.innerHTML;
+//      if(textValue.toUpperCase().indexOf(searchBox))
+//     }
+//     console.log(match);
+//   }
+
+
+// }
+
+const searchInput = document.getElementById("search-bar");
+searchInput.addEventListener("input", function () {
+  const searchTerm = this.value.trim(); // Trim whitespace
+  const filteredProducts = filterProducts2(searchTerm);
+
+  updateProductList(filteredProducts);
+});
+
+function filterProducts2(searchTerm) {
+  const filteredProducts = products.filter(product =>
+    product.name.toLowerCase().includes(searchTerm.toLowerCase()));  //includes btt2aked en 7ata a letter matches a product
+    return filteredProducts;
+}
+
+function updateProductList(filteredProducts) {
+  const productContainer = document.getElementById("product-container");
+  productContainer.innerHTML = ""; //3shan afady el products-container
+  makeCards(filteredProducts);
+}
+
 
 function makeCards(productsList) {
   // let j = 0;
