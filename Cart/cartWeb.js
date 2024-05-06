@@ -1,7 +1,7 @@
 
  
   var products = document.getElementsByClassName("listcart");
-
+updatePrice();
   function updatePrice() {
     var total = 0;
     var grandTotal = 0;

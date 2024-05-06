@@ -8,27 +8,14 @@
     </head>
     <body>
       <header>
-        <!-- <h1>Shopping</h1> -->
-        <h1> <a href="home.html" id="website-name"> Trendista </a></h1>
-        <a href="home.html"><img src="Cart\bc1d89df-d2b0-45f6-b0e6-17148b8f27c4.jfif" class="logo" alt="cannot load pic" width="50px"></a>
+        <img src="Cart\logo.jfif" class="logo">
+
+        <h2 class="brandname"> Trendista </h2>
+        
         <div class="icons">
-            <div class="icon-container">
-                <a href="myprofile.html"></a>
-                <i class="fas fa-user" ></i>
-                <div class="user-box">
-                    <p>Log in to enjoy special offers for members and fast checkout.</p>
-                    <button class="user-btn login-btn"><a href="../productspage/signin.html">Log In</a></button>
-                    <button class="user-btn signup-btn"><a href="../productspage/addaccount.html">creat account</a></button>
-                    
-                </div>
-            </div>
-            <a href="../productspage/itemsinwishlist.html" target="_self">
-                <i class="far fa-heart"></i>
-            </a>
-            <a href="../Cart/cartWeb.html" target="_self">  
-                          <i class="fas fa-shopping-cart"></i>
-            </a>
-         
+            <a href="../Cart/cartWeb.html"> <i class="fa-solid fa-cart-shopping" id="carticon"style="color: black;"></i></a>
+            <a href="../productspage/home.html"> <i class="fa-solid fa-house-chimney"  id="homeicon"style="color: black;"></i></a>
+            <a href="../productspage/myprofile.html"><i class="fa-solid fa-user" id="homeicon"style="color: black;"></i></a>
         </div>
     </header>
     <div class="final">
@@ -53,8 +40,8 @@
              <input  type="text" name="phone" id="Phone" readonly>
              <div id="phoneError" class="error"></div>
              <br><br>
-             <button onclick="dispaly()">ddd</button>
-           <div class="ff">
+             <button onclick="dispaly()">view</button>
+           <div class="TotalPrice">
            <label for="lb" >Total Price:</label>
            <input type="text" class="total" id="to" value="10000.0 EGP" readonly>
            </div>
