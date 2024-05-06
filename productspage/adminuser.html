@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management </title>
+    <link rel="stylesheet" href="adminuser.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>User Management </h1>
+        </header>
+        
+        <section class="user-form-section">
+            <h2>Add/Edit/Delete User</h2>
+            <form id="userForm" class="user-form">
+                <div class="input-group">
+                    <label for="userName">Name:</label>
+                    <input type="text" id="userName" placeholder="Enter name">
+                    <P class="error" id="nameError"></P>
+                </div>
+                <div class="input-group">
+                    <label for="userEmail">Email:</label>
+                    <input type="email" id="userEmail" placeholder="Enter email">
+                    <P class="error" id="emailError"></P>
+                </div>
+                <div class="input-group">
+                    <label for="userPassword">Password:</label>
+                    <input type="password" id="userPassword" placeholder="Enter password">
+                    <P class="error" id="passwordError"></P>
+                </div>
+                <div class="input-group">
+                    <label for="userAddress">Address:</label>
+                    <input type="text" id="userAddress" placeholder="Enter address">
+                    <P class="error" id="addressError"></P>
+                </div>
+                <div class="input-group">
+                    <label for="userPhone">Phone:</label>
+                    <input type="tel" id="userPhone" placeholder="Enter phone number">
+                    <P class="error" id="phoneError"></P>
+                </div>
+                
+                <button type="submit" class="btn">Save User</button>
+            </form>
+        </section>
+
+        <section class="users-list-section">
+            <h2>Users</h2>
+            <ul id="userList" class="user-list">
+            </ul>
+        </section>
+    </div>
+    
+    <script src="adminuser.js"></script>
+</body>
+</html>
