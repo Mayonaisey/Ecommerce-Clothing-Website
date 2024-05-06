@@ -1,0 +1,71 @@
+body {
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+form {
+  width: 300px; 
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: #1f4959;
+  margin-bottom: 5px;
+}
+
+input, button {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 7px;
+}
+
+#send, #usersButton, #itemsButton {
+  background-color: #948b7e;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#send:hover, #usersButton:hover, #itemsButton:hover {
+  opacity: 0.8;
+}
+
+#email:hover, #password:hover {
+  opacity: 0.7;
+}
+
+h1 {
+  color: #1f4959;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.content {
+  margin-left: 20px;
+  
+}
+
+.smalltext {
+  color: rgb(178, 175, 175);
+  text-decoration: underline;
+}
+
+.box {
+  margin-left: 32%;
+  margin-top: 83px;
+}
+a{
+  color: white;
+  text-decoration: none;
+
+
+}
+
+#usersButton, #itemsButton {
+  display: none; 
+
+}
+

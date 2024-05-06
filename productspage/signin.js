@@ -13,7 +13,11 @@ function validateForm(event) {
   if (email === 'admin@gmail.com' && password === 'admin123') {
     document.getElementById('usersButton').style.display = 'block';
     document.getElementById('itemsButton').style.display = 'block';
-  } else {
-    alert('Incorrect email or password');
   }
+   else {
+  // alert('Incorrect email or password');
+ // document.getElementsByClassName('form').submit();
+ 
+ window.location.href = 'home.html';
+   }
 }

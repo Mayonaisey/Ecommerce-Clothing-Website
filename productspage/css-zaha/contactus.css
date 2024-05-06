@@ -1,0 +1,66 @@
+label {
+  display: block;
+  font-weight: bold;
+  color: #1f4959;
+  margin-bottom: 5px;
+  margin-left: 15px;
+}
+
+input {
+  margin-bottom: 10px;
+  width: 300px;
+  padding: 7px;
+  margin-left: 15px;
+
+}
+
+
+#send {
+  margin-left: 460px;
+  padding: 10px ;
+  background-color: #948b7e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+
+}
+
+#send:hover {
+  opacity: 0.8;
+  box-shadow: 5px 5px 5px rgb(142, 141, 141);
+}
+
+#email:hover,
+#number:hover {
+  opacity: 0.7;
+  text-shadow: 5px 5px 5px rgb(126, 126, 126);
+}
+
+h1 {
+  margin: 100px;
+  margin-left: 130px;
+  margin-bottom: 30px;
+  color: #1f4959;
+  text-align: center;
+  text-decoration: wavy;
+}
+
+.links {
+  color: black;
+}
+
+.link:hover {
+  text-shadow: 5px 5px 5px gray;
+
+}
+
+.kalam {
+  margin-left: 55px;
+  margin-top: 40px;
+
+}
+
+.contact {
+  color: rgb(32, 90, 32);
+  text-decoration: underline;
+}

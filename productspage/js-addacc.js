@@ -63,6 +63,7 @@ function validateForm(event) {
     if (passwordValue === password2Value) {
         message.textContent = "Passwords Match";
        message.style.backgroundColor = "#3ae374";
+       form.submit();
     } else {
         message.textContent =  "Password  does not  Match";
        message.style.backgroundColor = "#ff4d4d";

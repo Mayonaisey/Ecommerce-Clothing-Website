@@ -23,15 +23,16 @@
  };
 
   
-  function change(){
-    let xusername = document.getElementById('Eusername');
-    let xemail = document.getElementById('Eemail');
-    let xpassword = document.getElementById('Epassword');
-    let xpassword2 = document.getElementById('Epassword2');
-    let xnumber = document.getElementById('Enumber');
-    let xcountry = document.getElementById('Ecountry');
-    let xaddress = document.getElementById('EAddress');
-    let xdetails = document.getElementById('Edetails');
+ let xusername, xemail, xpassword, xnumber, xcountry, xaddress, xdetails;
+
+ function change() {
+     xusername = document.getElementById('Eusername');
+     xemail = document.getElementById('Eemail');
+     xpassword = document.getElementById('Epassword');
+     xnumber = document.getElementById('Enumber');
+     xcountry = document.getElementById('Ecountry');
+     xaddress = document.getElementById('EAddress');
+     xdetails = document.getElementById('Edetails');
   
   
     xusername.innerHTML = user.username;
@@ -42,5 +43,78 @@
     xaddress.innerHTML = user.address;
     xdetails.innerHTML = user.details;
 
-  
+    document.getElementById('editButton').style.display = 'inline-block';
+
+    //document.getElementsByClassName('edit').style.display = 'block';
+
   }
+
+  function edit(){
+
+    
+      document.getElementById('newusername').style.display = 'block';
+      document.getElementById('newemail').style.display = 'block';
+      document.getElementById('newpassword').style.display = 'block';
+      document.getElementById('newnumber').style.display = 'block';
+      document.getElementById('newcountry').style.display = 'block';
+      document.getElementById('newaddress').style.display = 'block';
+      document.getElementById('newdetails').style.display = 'block';
+
+      document.getElementById('saveButton').style.display = 'inline-block';
+
+    
+}
+
+function save() {
+  let editedUsername = document.getElementById('newusername').value.trim();
+  let editedEmail = document.getElementById('newemail').value.trim();
+  let editedPassword = document.getElementById('newpassword').value.trim();
+  let editedNumber = document.getElementById('newnumber').value.trim();
+  let editedCountry = document.getElementById('newcountry').value.trim();
+  let editedAddress = document.getElementById('newaddress').value.trim();
+  let editedDetails = document.getElementById('newdetails').value.trim();
+
+  if (editedUsername !== '') {
+    user.username = editedUsername;
+    xusername.innerHTML = editedUsername;
+  }
+
+  if (editedEmail !== '') {
+    user.email = editedEmail;
+    xemail.innerHTML = editedEmail;
+  }
+
+  if (editedPassword !== '') {
+    user.password = editedPassword; 
+    xpassword.innerHTML = editedPassword;
+  }
+
+  if (editedNumber !== '') {
+    user.number = editedNumber;
+    xnumber.innerHTML = editedNumber;
+  }
+
+  if (editedCountry !== '') {
+    user.country = editedCountry;
+    xcountry.innerHTML = editedCountry;
+  }
+
+  if (editedAddress !== '') {
+    user.address = editedAddress;
+    xaddress.innerHTML = editedAddress;
+  }
+
+  if (editedDetails !== '') {
+    user.details = editedDetails;
+    xdetails.innerHTML = editedDetails;
+  }
+
+  document.getElementById('newusername').style.display = 'none';
+  document.getElementById('newemail').style.display = 'none';
+  document.getElementById('newpassword').style.display = 'none';
+  document.getElementById('newnumber').style.display = 'none';
+  document.getElementById('newcountry').style.display = 'none';
+  document.getElementById('newaddress').style.display = 'none';
+  document.getElementById('newdetails').style.display = 'none';
+  document.getElementById('saveButton').style.display = 'none';
+}

@@ -2,65 +2,8 @@
 <html>
 <head>
     <title>Edit Your Profile</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+    <link rel="stylesheet" href="css-zaha/edit.css">
 
-        
-
-        .container {
-            max-width: 100%;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .eachline {
-            display: flex;
-            align-items: center;
-            margin-left: 20px;
-            margin-right: 5px;
-            margin-top: 20px;
-            
-            
-        }
- 
-        label {
-            font-weight: bold;
-            flex: 1;
-        }
-
-        p {
-            margin: 0;
-            padding: 0;
-            flex: 3;
-        }
-
-        button.save {
-            margin-top: 30px;
-            padding: 10px 20px;
-            background-color: #948b7e;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        button.save:hover {
-            background-color: #45a049;
-        }
-        .outerdiv{
-
-          width: 803px;
-        }
-
-
-    </style>
 </head>
 
 <body>
@@ -69,39 +12,56 @@
             <div class="eachline">
                 <label for="Eusername">UserName:</label>
                 <p id="Eusername"></p>
+                <input type="text"id='newusername'>
             </div>
 
             <div class="eachline">
                 <label for="Eemail">Email:</label>
                 <p id="Eemail"></p>
+                <input type="text"id='newemail'>
+
             </div>
 
             <div class="eachline">
                 <label for="Epassword">Create Password:</label>
                 <p id="Epassword"></p>
+                <input type="text"id='newpassword'>
+
             </div>
 
             <div class="eachline">
                 <label for="Enumber">Phone Number:</label>
                 <p id="Enumber"></p>
+                <input type="tel"id='newnumber'pattern="0(10|11|12|15)\d{8}" required  title="enter valid phone number ">
+
             </div>
 
             <div class="eachline">
                 <label for="Ecountry">City:</label>
                 <p id="Ecountry"></p>
+                <input type="text"id='newcountry'>
+
             </div>
 
             <div class="eachline">
                 <label for="EAddress">Address:</label>
                 <p id="EAddress"></p>
+                <input type="text"id='newaddress'>
+
             </div>
 
             <div class="eachline">
                 <label for="Edetails">Location Details:</label>
                 <p id="Edetails"></p>
+                <input type="text"id='newdetails'>
+
             </div>
 
-            <button class="save" onclick="change()">view your details</button>
+            <button class="view" onclick="change()">view your details</button>
+            <button id="editButton" class="edit" onclick="edit()">edit</button>
+            <button id="saveButton" class="save" onclick="save()">save</button>
+            
+
         </div>
     </div>
 
