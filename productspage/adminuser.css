@@ -1,21 +1,22 @@
 
 body {
     font-family: Arial, sans-serif;
-    
-   
-    color: #333;
+    background-color: #e3dfda;
 }
 
 .container {
     width: 80%;
     margin: auto;
+    background-color: #e3dfda;
 }
 
 header {
-    background: #333;
+    background: #a59a89;;
     color: #fff;
     padding-top: 10px;
     text-align: center;
+    
+
 }
 
 .user-form-section, .users-list-section {
@@ -27,7 +28,7 @@ header {
 }
 
 h2 {
-    color: #333;
+    color: #786c5b;
 }
 
 .input-group {
@@ -49,14 +50,14 @@ h2 {
 }
 
 .input-group button {
-    background-color: #5cb85c;
+    background-color: #c49b5f;
     color: white;
     border: none;
     cursor: pointer;
 }
 
 .input-group button:hover {
-    background-color: #4cae4c;
+    background-color:#786c5b;
 }
 
 .user-list {
@@ -82,7 +83,13 @@ button {
     border: none;
     border-radius: 4px;
     margin-left: 10px;
-    background-color: black;
+    background-color: #c49b5f;
+}
+    .btn{
+        background-color: #c49b5f;
+        border: none;
+        border-radius: 50px;
+        height: 30px;
 }
 .error {
     color: red;

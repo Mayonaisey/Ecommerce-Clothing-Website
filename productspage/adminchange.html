@@ -6,24 +6,11 @@
     <link rel="stylesheet" href="adminchanges.css">
 </head>
 <body>
-    <button id="viewProductsButton" onclick="window.location.href='productspage.html';">View all Products</button>
-    <button id="addProductButton">Add Product</button>
-
-    <div id="addProductForm" style="display: none;">
-        <h2>Add New Product</h2>
-        <form id="newProductForm">
-            <label for="newProductID"> product id:</label>
-            <input type="text" id="newProductID" name="newProductID"><br>
-            <label for="newProductImage">Product Image:</label>
-            <input type="file" id="newProductImage" name="newProductImage" accept="image/*"><br>
-            <label for="newProductName">Product Name:</label>
-            <input type="text" id="newProductName" name="newProductName" ><br>
-            <label for="newProductPrice">Product Price:</label>
-            <input type="text" id="newProductPrice" name="newProductPrice"><br>
-           
-            <input type="submit" value="Done">
-        </form>
-    </div>
+    <header>
+        <h1>product Management </h1>
+    </header>
+    
+    
     <table id="productsTable">
         <thead>
             <tr>
@@ -57,6 +44,24 @@
             </tr>
         </tbody>
     </table>
+    <button id="viewProductsButton" onclick="window.location.href='productspage.html';">View all Products</button>
+    <button id="addProductButton">Add Product</button>
+
+    <div id="addProductForm" style="display: none;">
+        <h2>Add New Product</h2>
+        <form id="newProductForm">
+            <label for="newProductID"> product id:</label>
+            <input type="text" id="newProductID" name="newProductID"><br>
+            <label for="newProductImage">Product Image:</label>
+            <input type="file" id="newProductImage" name="newProductImage" accept="image/*"><br>
+            <label for="newProductName">Product Name:</label>
+            <input type="text" id="newProductName" name="newProductName" ><br>
+            <label for="newProductPrice">Product Price:</label>
+            <input type="text" id="newProductPrice" name="newProductPrice"><br>
+           
+            <input type="submit" value="Done">
+        </form>
+    </div>
     <script src="adminchanges.js"></script>
 </body>
 </html>

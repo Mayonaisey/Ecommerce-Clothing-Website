@@ -38,18 +38,5 @@ function scrollToTop() {
 }
 
 
-/*var itemCount = 0; 
-
-function addToCart() {
-itemCount++; 
-document.getElementById('cart-count').textContent = itemCount; 
-}
-
-function removeFromCart() {
-if (itemCount > 0) { 
-itemCount--; 
-document.getElementById('cart-count').textContent = itemCount;
-}
-}*/
 
 

@@ -1,6 +1,8 @@
-
+body{
+  background-color: #e3dfda;
+}
 button {
-  background-color: #007BFF;
+  background-color: #a59a89;
   color: white;
   border: none;
   padding: 8px 16px;
@@ -8,6 +10,7 @@ button {
   cursor: pointer;
   border-radius: 5px;
   margin-left: 10px;
+  margin-top: 20px;
 }
 
 button:hover {
@@ -60,7 +63,7 @@ th, td {
 }
 
 thead {
-  background-color: #007BFF;
+  background-color:#948b7e;
   color: white;
 }
 

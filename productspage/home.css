@@ -1,27 +1,37 @@
 body{
     background-color:#e2ddd7;
 }
+.logo {
+    margin: 10px;
+    margin-left: 80px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    padding: 0%;
+    width: 90px;
+    border-radius: 50%;
+  
+  }
+  
+  
+  
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 10px 20px;
-    background-color:#f2e394;
+    background-color: #C9C0B3;
     position: sticky;
     top: 0;
     z-index: 100;
 }
 
-h1 {
-    color: #d96459;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 60 px;
-    margin-top: 10px;
-
-}
+.brandname {
+    margin-top: 40px;
+  }
 
 .search-container {
     position: relative;
+    margin-right: 400px;
+    margin-left: 70px;
 }
 
 #search-bar {
@@ -45,7 +55,7 @@ h1 {
 }
 
 .search-btn:hover {
-    background-color: #121a71;
+    background-color: #534c43;
 }
 
 .icons i {
@@ -57,7 +67,7 @@ h1 {
     color: #000;
 }
 .icons i:hover{
-    color:#1188b0
+    color: rgb(142, 170,0);
 }
 
 .icon-container:hover .user-box {
@@ -105,7 +115,7 @@ h1 {
 }
 
 .user-btn a:hover {
-    color: rgb(69, 50, 211);
+    color: rgb(142, 170,0);
 }
 
 
@@ -118,7 +128,7 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline;
-    color: #1891c1
+    color: rgb(142, 170,0);
 }
 
 nav ul {
@@ -161,8 +171,8 @@ nav ul li {
 
 #shop {
     margin-left: 100;
-    background-color: #7e8be4;
-    color: #fff;
+    background-color: rgb(235, 232, 232);
+    color:#717463;
     padding: 10px 10px;
     border: none;
     cursor: pointer;
@@ -177,6 +187,9 @@ nav ul li {
     background-color: white;
 }
 
+#sale{
+    background-color:   #717463;
+}
 #saletext1 {
     color: white;
     font-size: larger;
@@ -335,7 +348,7 @@ nav ul li {
 
 .categories-conatiner .box .fa-solid {
     padding: 10px;
-    background: blue;
+    background-color: #534c43;
     color: black;
     border-radius: 5rem;
     margin-top: 2rem;
