@@ -4,15 +4,21 @@ document.getElementById('addProductButton').addEventListener('click', function()
     form.style.display = (form.style.display === 'none' || !form.style.display) ? 'block' : 'none';
 });
 
-document.getElementById('newProductForm').addEventListener('submit', function(event) {
-    event.preventDefault();
+    document.getElementById('newProductForm').addEventListener('submit', function(event) {
+        event.preventDefault();
     
-    const imageUrl = document.getElementById('newProductImage').value.trim();
+    const productID = document.getElementById('newProductID').value.trim();
+    const imageFile = document.getElementById('newProductImage').files[0];
     const name = document.getElementById('newProductName').value.trim();
     const price = document.getElementById('newProductPrice').value.trim();
+
     
-    if (!imageUrl) {
-        alert('Please enter a URL for the product image.');
+    if (!productID) {
+        alert('Please enter a product ID.');
+        return;
+    }
+    if (!imageFile) {
+        alert('Please select an image file.');
         return;
     }
     if (!name) {
@@ -24,22 +30,31 @@ document.getElementById('newProductForm').addEventListener('submit', function(ev
         return;
     }
 
-    const table = document.getElementById('productsTable').getElementsByTagName('tbody')[0];
-    const row = table.insertRow();
-    const cellImage = row.insertCell(0);
-    const cellName = row.insertCell(1);
-    const cellPrice = row.insertCell(2);
-    const cellChanges = row.insertCell(3);
+   
+    const reader = new FileReader();
+    reader.onload = function(event) {
+        
+        const table = document.getElementById('productsTable').getElementsByTagName('tbody')[0];
+        const row = table.insertRow(-1);
+        const cellID = row.insertCell(0);
+        const cellImage = row.insertCell(1);
+        const cellName = row.insertCell(2);
+        const cellPrice = row.insertCell(3);
+        const cellChanges = row.insertCell(4);
 
-    cellImage.innerHTML = `<img src="${imageUrl}" alt="${name}">`;
-    cellName.textContent = name;
-    cellPrice.innerHTML = `Price: <input type="text" value="${price}" readonly>`;
-    cellChanges.innerHTML = `<button onclick="toedit(this)">Edit</button><button onclick="deleteRow(this)">Delete</button>`;
+        cellID.textContent = productID;
+        cellImage.innerHTML = `<img src="${event.target.result}" alt="${name}" style="width:100px;">`;
+        cellName.textContent = name;
+        cellPrice.innerHTML = `Price: <input type="text" value="${price}" readonly>`;
+        cellChanges.innerHTML = `<button onclick="toedit(this)">Edit</button><button onclick="deleteRow(this)">Delete</button>`;
+    };
+
+    reader.readAsDataURL(imageFile);
 });
 
 function toedit(button) {
     var row = button.closest('tr'); 
-    var priceInput = row.cells[2].querySelector('input');
+    var priceInput = row.cells[3].querySelector('input');
     if (button.textContent === 'Edit') {
         priceInput.removeAttribute('readonly');
         priceInput.focus();
@@ -53,6 +68,7 @@ function toedit(button) {
         button.textContent = 'Edit';
     }
 }
+
 function deleteRow(button) {
     var row = button.closest('tr'); 
     row.parentNode.removeChild(row); 
