@@ -3,24 +3,27 @@
 
 <head>
   <style>
-    label {
-      margin: 30px;
+   label {
+      display: block;
       font-weight: bold;
-      font-family: Arial, sans-serif;
-      color: rgb(9, 8, 53);
-      font-size: medium;
-
+      color: #1f4959;
+      margin-bottom: 5px;
+      margin-left: 15px;
     }
 
     input {
-      margin: 10px;
+      margin-bottom: 10px;
+      width: 300px;
+      padding: 7px;
+      margin-left: 15px;
 
     }
 
+
     #send {
-      margin-left: 700px;
-      padding: 10px 20px;
-      background-color: #4CAF50;
+      margin-left: 460px;
+      padding: 10px ;
+      background-color: #948b7e;
       color: white;
       border: none;
       border-radius: 5px;
@@ -63,7 +66,7 @@
     }
 
     .contact {
-      color: green;
+      color: rgb(32, 90, 32);
       text-decoration: underline;
     }
 
@@ -87,7 +90,7 @@
         <label for="email"> email :</label>
         <input id="email" type="email" required>
         <br>
-        <label for="number"> Phone Number * </label>
+        <label for="number"> Phone Number: </label>
         <input  id="number" type="tel" pattern="0(10|11|12|15)\d{8}" required  title="phone number not valid. ">
 
         <label for="message"> Your message:</label>

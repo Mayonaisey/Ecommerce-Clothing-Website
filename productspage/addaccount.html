@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>new address</title>
+  <title>new account</title>
   <style>
 
 
@@ -14,9 +14,11 @@ input{
 }
 .save{
   color: white;
-  background-color: rgb(161, 160, 160);
-  padding: 5px;
+  background-color: #948b7e;
+  padding: 10px;
   border: none;
+  border-radius: 5px;
+
   margin: 5px;
   margin-top: 10px;
 }
@@ -48,13 +50,7 @@ input{
   color: rgb(46, 108, 46);
 }
 
-.right.success input{
-  border-color: rgb(60, 233, 60);
-}
 
-.right.error input{
-  border-color: rgb(196, 22, 22);
-}
 
 h1{
   text-align: center;
@@ -65,9 +61,12 @@ h1{
   text-decoration: underline;
 }
 #passmessage{
-  font-size: 14px;
+  font-size: 15px;
   margin: 0px;
   margin-top:15px ;
+  margin-left: 10px;
+  padding: 3px;
+  width: 165px;
   color: white;
 }
 
@@ -83,7 +82,7 @@ h1{
 
   <h1>Add New Account</h1>
 <hr>
-  <form id="form" onsubmit="validateForm()" >
+  <form id="form" onsubmit=" return validateForm(event)" action="home.html"  target="_blank">
 
     <label for="username"> Full name * </label>
 <input  id="username" type="text" required  >

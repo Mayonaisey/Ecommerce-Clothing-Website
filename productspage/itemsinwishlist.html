@@ -2,13 +2,16 @@
 <html>
   <head>
     <style>
+body{
+  background-color:#e3dfda;
 
+}
 .main{
   display: inline-block;
 }
       .picdiv{
         width: 330px;
-        height: 520px;
+        height: 470px;
         display: block;
         text-align: center;
         padding: auto;
@@ -25,12 +28,13 @@
   color: black;
 }
 .description:active{
-  color: red;
+  color: blue;
 }
 .basketbutton{
   color: white;
-  background-color: black;
+  background-color: #948b7e;
   margin: 12px;
+  border: none;
   padding: 20px;
   text-align: center;
   width: 325px;
@@ -43,7 +47,7 @@
 }
 .removebutton{
   color: rgb(192, 20, 20);
-  background-color: white;
+  background-color:#e3dfda;
   margin: 12px;
   padding: 20px;
   text-align: center;
@@ -60,9 +64,44 @@
 text-align: center;
 padding: 10px;
 }
+.logo{
+  margin: 10px;
+  margin-left: 50px;
+  margin-right: 20px;
+  margin-bottom: 0px;
+  padding: 0%;
+  width:90px;
+  border-radius: 50%;
+  
+}
+
+header {
+    display: flex;
+    align-items: left;
+    padding: 10px ;
+    padding-top: 0px;
+    background-color:#C9C0B3;
+    height: 100px;
+    width: 100%;
+}
+
+.brandname{
+  margin-top: 40px;
+}
+.title{
+  margin:5px;
+}
     </style>
   </head>
   <body>
+    <header>
+
+      <img src="images\logo.jpg" class="logo" >
+  
+      <h2 class="brandname"> Trendista </h2>
+         
+      
+    </header>
 <div class="main">
 
     <div class="titlediv">
@@ -75,7 +114,7 @@ padding: 10px;
       </div>
 
       <div class="detailsdiv">
-<a href="item.html"><h5><span class="description" title="Denim pull-on shorts">Denim pull-on shorts</span></h5></a>
+<a href="item.html"><h5><span class="description" title="Denim pull-on shorts">Denim pull-on shorts  <br> price: 1050 LE </span></h5></a>
       </div>
       <div class="basketdiv">
         <button class="basketbutton">MOVE TO BASKET</button>
@@ -98,7 +137,7 @@ padding: 10px;
       </div>
 
       <div class="detailsdiv">
-<a href="item.html"><h5><span class="description" title="Linen-blend pull-on trousers">Linen-blend pull-on trousers</span></h5></a>
+<a href="item.html"><h5><span class="description" title="Linen-blend pull-on trousers">Linen-blend pull-on trousers <br> price: 950 LE</span></h5></a>
       </div>
       <div class="basketdiv">
         <button class="basketbutton">MOVE TO BASKET</button>
