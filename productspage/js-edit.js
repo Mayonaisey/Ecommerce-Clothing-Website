@@ -48,6 +48,8 @@
     //document.getElementsByClassName('edit').style.display = 'block';
 
   }
+
+  //this function is by and for fatema hany
     function display(){
   let city=document.getElementById("City");
   let street=document.getElementById("st");
