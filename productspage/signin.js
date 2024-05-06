@@ -18,6 +18,6 @@ function validateForm(event) {
   // alert('Incorrect email or password');
  // document.getElementsByClassName('form').submit();
  
- window.location.href = 'home.html';
+ window.location.href = 'index.html';
    }
 }
