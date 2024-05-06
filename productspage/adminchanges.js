@@ -11,8 +11,16 @@ document.getElementById('newProductForm').addEventListener('submit', function(ev
     const name = document.getElementById('newProductName').value.trim();
     const price = document.getElementById('newProductPrice').value.trim();
     
-    if (!imageUrl || !name || isNaN(price) || Number(price) <= 0) {
-        alert('Please enter valid inputs for image URL, product name, and price.');
+    if (!imageUrl) {
+        alert('Please enter a URL for the product image.');
+        return;
+    }
+    if (!name) {
+        alert('Please enter a name for the product.');
+        return;
+    }
+    if (!price || isNaN(price) || Number(price) <= 0) {
+        alert('Please enter a valid price.');
         return;
     }
 
