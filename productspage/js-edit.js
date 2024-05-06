@@ -48,7 +48,16 @@
     //document.getElementsByClassName('edit').style.display = 'block';
 
   }
-
+    function display(){
+  let city=document.getElementById("City");
+  let street=document.getElementById("st");
+  let name=document.getElementById("Name");
+  let phone=document.getElementById("Phone");
+  city.value=user.contery;
+  street.value=user.address;
+  name.value=user.username;
+  phone.value=user.number;
+}
   function edit(){
 
     
