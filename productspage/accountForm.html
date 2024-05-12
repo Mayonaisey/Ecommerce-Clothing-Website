@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Sign In / Log In Form</title>
+  <style>
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 300;
+      line-height: 1.7;
+      color: rgb(255, 203, 47);
+      background-color: rgb(109, 180, 180);
+    }
+
+    .innersection {
+      background-color: blueviolet;
+      width: 400px;
+      height: 500px;
+      margin-left: 37%;
+      margin-top: 100px;
+      margin-bottom: 100px;
+      position: relative;
+      transition: transform 0.5s;
+    }
+
+    .form {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: rgb(255, 255, 255);
+      display: none;
+      padding-left: 10px;
+    }
+
+    a {
+      cursor: pointer;
+      color: blue;
+      text-decoration: underline;
+      margin-top: 20px;
+    }
+
+    .loginBtn,
+    .signinBtn {
+      background-color: black;
+      color: white;
+      padding: 10px;
+      margin: 5px;
+      margin-top: 15px;
+      /* border-radius: 35px; */
+    }
+
+    .loginBtn {
+      margin-left: 120px;
+    }
+
+    .choose h1 {
+      margin-left: 80px;
+      padding-top: 100px;
+    }
+
+    #passmessage {
+      font-size: 15px;
+      margin: 0px;
+      margin-top: 15px;
+      margin-left: 10px;
+      padding: 3px;
+      width: 165px;
+      color: white;
+    }
+
+    #usersButton,
+    #itemsButton {
+      display: none;
+    }
+
+    #usersButton,
+    #itemsButton {
+      background-color: #948b7e;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+  </style>
+
+</head>
+
+<body>
+  <section id="innersection" class="innersection">
+
+    <div class="choose">
+      <h1> There is no account </h1>
+
+      <button id="loginBtn" class="loginBtn" onclick="appearlogin()">Login</button>
+      <button id="signinBtn" class="signinBtn" onclick="appearsignin()">Sign Up</button>
+
+    </div>
+    <div id="loginForm" class="form">
+
+      <h2>Login Form</h2>
+      <form id="form" onsubmit=" return validateForm(event)" action="home.html">
+        <label for="username"> Full name * </label>
+        <input id="username" type="text" required>
+
+        <br>
+
+        <label for="number"> Phone Number * </label>
+        <input id="number" type="tel" pattern="0(10|11|12|15)\d{8}" required title="enter valid phone number ">
+        <br>
+
+
+        <label for="country"> City * </label>
+        <input id="country" type="text" required placeholder="Cairo / Giza /....">
+        <br>
+
+        <label for="Address"> Address * </label>
+        <input id="Address" type="text" required>
+        <br>
+
+        <label for="details"> Location Details </label>
+        <input id="details" type="text" required>
+
+        <br>
+
+        <label for="email"> Email * </label>
+        <input id="email" type="email" required>
+
+        <br>
+        <label for="password"> Create Password * </label>
+        <input id="password" type="password" required pattern="(?=.*[a-z])(?=.*[A-Z]).{8,}"
+          title="Must contain at least one uppercase and lowercase letter, and at least 8 characters">
+
+        <br>
+
+        <label for="password2"> Confirm password * </label>
+        <input id="password2" type="password" required pattern=".{8,}" title="Eight or more characters">
+
+        <br>
+        <p id="passmessage"></p>
+
+        <input id="checkbox" type="checkbox" required>
+        <label for="checkbox"> i agree to the terms and conditions. </label>
+        <br>
+
+        <button type="submit">Login</button>
+        <br>
+        <a class="switchToSignUp" onclick="appearsignin()">Sign up here</a>
+
+      </form>
+    </div>
+    <div id="signinForm" class="form">
+
+
+      <!-- --------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+      <h2>Sign Up Form</h2>
+      <form onsubmit="return validateForm(event)" action="home.html" target="_blank">
+        <label for="email">Email*</label>
+        <input id="email" type="email" required>
+
+        <br>
+        <label for="password">Password*</label>
+        <input id="password" type="password" required pattern=".{8,}" title="Eight or more characters">
+
+        <br>
+
+        <button type="submit">Sign Up</button>
+        <br>
+
+
+        <a class="switchToLogin" onclick="appearlogin()">Log in here</a>
+        <br>
+
+        <button id="usersButton" type="button"><a href="adminuser.html">Users</a> </button>
+        <button id="itemsButton" type="button"> <a href="adminchange.html" target="_blank"> Items</a> </button>
+
+      </form>
+    </div>
+  </section>
+
+  <script src="js-addacc.js"></script>
+  <script src="signin.js"></script>
+  <script src="js-edit.js"></script>
+
+  <script>
+
+    function appearlogin() {
+      document.getElementById('signinForm').style.display = 'none';
+      document.getElementById('loginForm').style.display = 'block';
+      document.getElementById('innersection').style.transform = 'rotateY(360deg)';
+    };
+
+    function appearsignin() {
+      document.getElementById('loginForm').style.display = 'none';
+      document.getElementById('signinForm').style.display = 'block';
+      document.getElementById('innersection').style.transform = 'rotateY(360deg)';
+    };
+  </script>
+
+</body>
+
+</html>

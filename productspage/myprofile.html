@@ -4,6 +4,8 @@
 <head>
   <title>TRENDISTA</title>
   <link rel="stylesheet" href="css-zaha/myprofile.css">
+  <!-- <link rel="stylesheet" href="css-zaha/wishlist.css"> -->
+
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
@@ -33,19 +35,10 @@
 
       <div class="lowerright">
 
-        <div class="one">
-          <a href="#" onclick="loadPage('accountoverview.html', 'leftside')">
-
-            <!--  <img src="accounticon2.png" class="accounticon"> -->
-            <i class="fa-solid fa-user" style="color: black;"></i> <span class="text"> ACCOUNT OVERVIEW </span>
-          </a>
-        </div>
-
-
         <div class="two">
-          <hr>
 
-          <a href="#" onclick="loadPage('wishlist.html', 'leftside')">
+          <!-- <a href="#" onclick="loadPage('wishlist.html', 'leftside')"> -->
+           <a href="#" onclick="openwishlist()"> 
 
             <i class="fa-solid fa-heart" style="color: black;"></i>
 
@@ -58,7 +51,9 @@
         <div class="three">
           <hr>
 
-          <a href="#" onclick="loadPage('orders.html', 'leftside')">
+          <a href="#" onclick="openorder()"> 
+
+          <!-- <a href="#" onclick="loadPage('orders.html', 'leftside')"> -->
             <!--          <img src="ordericon4.png" class="accounticon"> -->
             <i class="fa-solid fa-cart-shopping" style="color:black;"></i>
             <span class="text"> ORDERS </span>
@@ -68,8 +63,9 @@
 
         <div class="four">
           <hr>
+          <a href="#" onclick="opencontact()"> 
 
-          <a href="#" onclick="loadPage('contactus.html', 'leftside')">
+          <!-- <a href="#" onclick="loadPage('contactus.html', 'leftside')"> -->
             <!--          <img src="contacticon.png" class="accounticon"> -->
             <i class="fa-solid fa-phone" style="color: black;"></i>
             <span class="text"> CONTACT US </span>
@@ -78,8 +74,9 @@
 
         <div class="five">
           <hr>
+          <a href="#" onclick="openedit()"> 
 
-          <a href="#" onclick="loadPage('edit.html', 'leftside')">
+          <!-- <a href="#" onclick="loadPage('edit.html', 'leftside')"> -->
             <i class="fa-solid fa-pen-to-square" style="color:black;"></i>
             <span class="text"> EDIT INFO </span>
           </a>
@@ -90,6 +87,135 @@
 
 
     <div class="leftside" id="leftside">
+
+
+      <!-- wishdiv -->
+
+      <div class="wishdiv" id="wishdiv"> 
+        <div class="wishsora">
+      <img src="zahapics/emptywish.png" class="image">
+    </div>
+    
+    <div class="wishkalam">
+    
+      <h1> <br>Your Wishlist Is Empty ! </h1>
+      <span class="smalltext">  <h5> You haven’t added any products to your wishlist yet.</h5></span>
+      <button ><a  class="buttontext" href="productsPage.html" >Start Shopping </a></button>
+    </div>
+    
+    </div>
+
+
+<!-- orderdiv -->
+
+
+    <div class="orderdiv" id="orderdiv"> 
+      <div class="ordersora">
+    <img src="zahapics/images.jpg" class="image">
+  </div>
+  <div class="orderkalam">
+  
+    <h1> <br> There is no order yet ! </h1>
+    <span class="smalltext">  <h5> You haven't ordered any products yet.</h5></span>
+    <button ><a class="buttontext"  href="home.html" target="_blank">Add your first order now</a> </button>
+  </div>
+  </div>
+
+
+
+  <!-- contactdiv -->
+
+  
+    <div  class="contactdiv" id="contactdiv">
+      <div  >
+        <form>
+  
+          <h1> CONTACT US BY SENDING YOUR :</h1>
+          <hr>
+          <label for="email"> email :</label>
+          <input id="email" type="email" required>
+          <br>
+          <label for="number"> Phone Number: </label>
+          <input  id="number" type="tel" pattern="0(10|11|12|15)\d{8}" required  title="phone number not valid. ">
+  
+          <label for="message"> Your message:</label>
+          <input id="message" type="text" required>
+          <input id="send" type="submit" value="Send">
+        </form>
+        <p class="kalamtaht">If you need any assistance, please don't hesitate to <a class="contact"
+            href="https://www.facebook.com/">contact us</a>. Our customer support team is here to help  <a class="links" href="https://www.facebook.com/"> <i class="fa-brands fa-facebook"></i></a>
+  
+            <a class="links" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a> .
+          </p>
+  
+      </div>
+    </div>
+  
+
+    <!-- editdiv -->
+
+    <div class="editdiv" id="editdiv">
+      <div class="container">
+          <div class="eachline">
+              <label for="Eusername">UserName:</label>
+              <p id="Eusername"></p>
+              <input type="text"id='newusername'>
+          </div>
+
+          <div class="eachline">
+              <label for="Eemail">Email:</label>
+              <p id="Eemail"></p>
+              <input type="text"id='newemail'>
+
+          </div>
+
+          <div class="eachline">
+              <label for="Epassword">Create Password:</label>
+              <p id="Epassword"></p>
+              <input type="text"id='newpassword'>
+
+          </div>
+
+          <div class="eachline">
+              <label for="Enumber">Phone Number:</label>
+              <p id="Enumber"></p>
+              <input type="tel"id='newnumber'pattern="0(10|11|12|15)\d{8}" required  title="enter valid phone number ">
+
+          </div>
+
+          <div class="eachline">
+              <label for="Ecountry">City:</label>
+              <p id="Ecountry"></p>
+              <input type="text"id='newcountry'>
+
+          </div>
+
+          <div class="eachline">
+              <label for="EAddress">Address:</label>
+              <p id="EAddress"></p>
+              <input type="text"id='newaddress'>
+
+          </div>
+
+          <div class="eachline">
+              <label for="Edetails">Location Details:</label>
+              <p id="Edetails"></p>
+              <input type="text"id='newdetails' class="editinput">
+
+          </div>
+
+          <button class="view" onclick="change()">view your details</button>
+          <button id="editButton" class="edit" onclick="edit()">edit</button>
+          <button id="saveButton" class="save" onclick="save()">save</button>
+          
+
+      </div>
+  </div>
+
+
+
+
+    
     </div>
   </div>
 
@@ -121,41 +247,13 @@
 
 </div>
 
-  <script>
-    //deh el fn el btfta7 el url el 3ayzo fe same exact page bas fe div mo3yan
+  <script src="myprofile.js"> </script>
 
-
-    /*function loadPage(url, targetDiv) {
-      var x = new XMLHttpRequest();
-     x.onreadystatechange = function() {
-          document.getElementById(targetDiv).innerHTML = this.responseText;
-      };
-      x.open("GET", url, true);
-      x.send();
-    }
-    window.onload = function() {
-    loadPage('accountoverview.html', 'leftside');};*/
-    function loadPage(url, targetDivId) {
-      fetch(url)
-        .then(function (response) {
-          return response.text();
-        })
-        .then(function (html) {
-          document.getElementById(targetDivId).innerHTML = html;
-        })
-    }
-
-
-    window.onload = function () {
-      loadPage('accountoverview.html', 'leftside');
-    };
-
-
-  </script>
-<!-- <script src="signin.js"></script>
-  <script src="js-addacc.js"></script> -->
   <script src="js-edit.js"></script>
+  <script src="js-addacc.js"></script>
+  <!-- <script src="loadpage.js"></script> -->
 
+  
 </body>
 
 </html>

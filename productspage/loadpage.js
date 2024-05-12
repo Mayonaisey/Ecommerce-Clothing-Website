@@ -1,3 +1,8 @@
+
+
+
+    //deh el fn el btfta7 el url el 3ayzo fe same exact page bas fe div mo3yan
+
 function loadPage(url, targetDivId) {
 
     //fetch badeeel el XMLHttpRequest()  used 3shan a request data el html yanee  without having to do a full page refresh.
